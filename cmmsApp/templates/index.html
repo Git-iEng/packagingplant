@@ -2,996 +2,550 @@
 <html lang="en">
 {% load static %}
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ring Main Units (RMU) | iEngineering</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Industrial Boilers | iEngineering</title>
 
   <!-- Google Tag Manager -->
   <script>
-    (function(w,d,s,l,i){
-      w[l]=w[l]||[];
-      w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-      var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
-      j.async=true;
-      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-      f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TKQV8LKX');
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != "dataLayer" ? "&l=" + l : "";
+      j.async = true;
+      j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, "script", "dataLayer", "GTM-TKQV8LKX");
   </script>
   <!-- End Google Tag Manager -->
 
-  <!--=============== CSS ===============-->
+  <!-- Shared site CSS -->
   <link rel="stylesheet" href="{% static 'css/home.css' %}">
   <link rel="stylesheet" href="{% static 'css/neplan-about.css' %}">
   <link rel="stylesheet" href="{% static 'css/consult-block.css' %}">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <link rel="icon" href="{% static 'images/logo1.png' %}">
   <link rel="stylesheet" href="{% static 'css/footer.css' %}">
-  <script defer src="{% static 'js/main.js' %}"></script>
+
+  <!-- Boiler-specific CSS -->
+  <link rel="stylesheet" href="{% static 'css/home.css' %}">
+
+  <link rel="icon" href="{% static 'images/logo1.png' %}">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-{% include 'header.html' %}
-{% include 'request_demo_modal.html' %}
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQV8LKX"
+            height="0"
+            width="0"
+            style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
-<!-- ====================== HERO / HEADLINE ====================== -->
-<section id="home" class="section-hero-solar-system">
-  <div class="container-solar-system grid-hero-solar-system">
-    <div class="hero-left-solar-system">
-      <h1 class="hero-title-solar-system">
-        Ring Main Units (RMU)<br>
-        <span class="accent-solar-system"> Medium Voltage</span> Power<br>
-        Distribution <span class="accent-solar-system">Solutions</span>
-      </h1>
+  {% include 'header.html' %}
+  {% include 'request_demo_modal.html' %}
 
-      <p class="hero-sub-solar-system">
-        Compact, factory-assembled RMU cabinets for safe and reliable MV/HV distribution
-        between <strong>7.2 kV – 36 kV</strong>. Designed for indoor and outdoor use with integrated
-        transformer protection, fault isolation, and easy expansion.
-      </p>
+  <!-- ============ HERO ============ -->
+  <section class="bo-hero" id="home">
+    <div class="bo-container">
+      <div class="bo-hero-inner">
 
-      <div class="hero-cta-solar-system">
-        <a href="#solutions" class="btn-primary-solar-system">RMU Solutions</a>
-        <a href="#contact" class="btn-ghost-solar-system js-open-demo">Get a Quote</a>
-      </div>
-    </div>
-
-    <div class="hero-right-solar-system">
-      <!-- Replace the src with your RMU image path if available -->
-      <img src="{% static 'images/home.avif' %}"
-           alt="Ring Main Unit for Medium Voltage Distribution"
-           class="hero-img-solar-system">
-    </div>
-  </div>
-
-  <!-- Decorative base band like the reference -->
-  <div class="hero-band-solar-system"></div>
-</section>
-
-<!-- ====================== ABOUT RMU ====================== -->
-<section class="section-about-lv-electrical-about- reveal-right-lv-electrical-services">
-  <div class="container-lv-electrical-about-">
-    <div class="grid-lv-electrical-about-">
-
-      <!-- Image -->
-      <figure class="media-lv-electrical-about- reveal-lv-electrical-about- reveal-left-lv-electrical-services">
-        <img src="{% static 'images/smart-sol.avif' %}"
-             alt="Ring Main Unit Cabinet for Medium Voltage Distribution"
-             class="img-lv-electrical-about-" />
-      </figure>
-
-      <!-- Copy -->
-      <div class="copy-lv-electrical-about- reveal-lv-electrical-about-">
-        <h2 class="title-lv-electrical-about- reveal-right-lv-electrical-services">
-          Reliable Ring Main Unit (RMU) Solutions for Medium Voltage Networks
-        </h2>
-
-        <p class="lead-lv-electrical-about- reveal-right-lv-electrical-services">
-          A Ring Main Unit (RMU) cabinet, also known as a medium voltage cabinet,
-          is an integrated piece of electrical equipment designed to connect, measure,
-          protect, and control medium voltage power distribution. It brings together
-          fixed-type breakers and transformer protection in a compact, factory-assembled
-          enclosure, improving the reliability and safety of your network.
-        </p>
-
-        <p class="lead-lv-electrical-about- reveal-right-lv-electrical-services">
-          RMU cabinets are engineered to enhance the performance of power distribution
-          networks while offering advanced protection for transformers and other critical
-          electrical assets. With modular construction and configurable busbar sections,
-          RMUs are simple to install, maintain, replace, and expand as your system grows.
-          They are available in both indoor and outdoor configurations, making them ideal
-          for industrial, commercial, and utility applications.
-        </p>
-
-        <ul class="benefits-lv-electrical-about- reveal-right-lv-electrical-services">
-          <li>
-            <span class="dot-lv-electrical-about-"></span>
-            Compact, fully enclosed MV cabinet with modular design
-          </li>
-          <li>
-            <span class="dot-lv-electrical-about-"></span>
-            Voltage range typically between <strong>7.2 kV – 36 kV</strong>
-          </li>
-          <li>
-            <span class="dot-lv-electrical-about-"></span>
-            Integrated transformer and feeder protection with advanced switching
-          </li>
-          <li>
-            <span class="dot-lv-electrical-about-"></span>
-            Indoor and outdoor variants with easy maintenance and future expansion
-          </li>
-        </ul>
-      </div>
-
-      <!-- You can keep rating card commented if not required -->
-      <!--
-      <aside class="rating-card-lv-electrical-about- reveal-lv-electrical-about- reveal-right-lv-electrical-services">
-        <div class="score-lv-electrical-about- reveal-right-lv-electrical-services">4.9</div>
-        <div class="stars-lv-electrical-about-" aria-label="4.9 out of 5">
-          <span>★</span><span>★</span><span>★</span><span>★</span><span class="half-lv-electrical-about-">★</span>
-        </div>
-        <p class="rating-note-lv-electrical-about-">Verified Clients</p>
-      </aside>
-      -->
-    </div>
-  </div>
-</section>
-
-<!-- ========= HERO / IMAGE STRIP (RMU SOLUTIONS BAND) ========= -->
-<section class="section-services-lv-electrical-services" id="solutions">
-  <div class="services-head-lv-electrical-services">
-    <div class="head-left-lv-electrical-services reveal-left-lv-electrical-services">
-      <a class="eyebrow-lv-electrical-services">RMU Solutions</a>
-      <h2 class="title-lv-electrical-services">
-        Ring Main Unit Configurations<br>
-        You Can Rely On
-      </h2>
-    </div>
-    <a href="#all-services"
-       id="exploreServicesBtn"
-       class="btn-orange-lv-electrical-services reveal-right-lv-electrical-services"
-       aria-expanded="false">
-      Explore RMU Types
-    </a>
-  </div>
-</section>
-
-<!-- ========= OVERLAPPING WHITE CARD ========= -->
-<section class="section-services-lv-electrical-services2" id="all-services">
-  <div class="services-card-lv-electrical-services reveal-up-lv-electrical-services">
-    <div class="grid-lv-electrical-services" id="servicesGrid">
-
-      <!-- 1: ACB RMU -->
-      <article class="svc-item-lv-electrical-services reveal-up-lv-electrical-services">
-        <div class="svc-icon-lv-electrical-services"></div>
-        <h3 class="svc-title-lv-electrical-services">
-          <a href="#">ACB (Air Circuit Breaker) RMU</a>
-        </h3>
-        <p class="svc-text-lv-electrical-services">
-          ACB-based Ring Main Units use Air Circuit Breakers for protection and control of medium voltage
-          feeders and transformers. They provide reliable protection against overcurrent, short circuits,
-          and earth faults, and are well suited for industrial and commercial installations with higher
-          current ratings.
-        </p>
-        <button class="svc-cta-lv-electrical-services" data-detail="msb" aria-label="More about ACB RMU">
-          <span class="arrow-lv-electrical-services">Learn more</span>
-        </button>
-      </article>
-
-      <!-- 2: VCB RMU -->
-      <article class="svc-item-lv-electrical-services reveal-up-lv-electrical-services">
-        <div class="svc-icon-lv-electrical-services"></div>
-        <h3 class="svc-title-lv-electrical-services">
-          <a href="#">VCB (Vacuum Circuit Breaker) RMU</a>
-        </h3>
-        <p class="svc-text-lv-electrical-services">
-          VCB-based RMUs extinguish the arc inside a sealed vacuum interrupter, delivering fast fault
-          clearance, high reliability, and minimal maintenance. They are commonly deployed in urban and
-          underground distribution networks where space is limited and uptime is critical.
-        </p>
-        <button class="svc-cta-lv-electrical-services" data-detail="mdp" aria-label="More about VCB RMU">
-          <span class="arrow-lv-electrical-services">Learn more</span>
-        </button>
-      </article>
-
-      <!-- 3: SF6 RMU -->
-      <article class="svc-item-lv-electrical-services reveal-up-lv-electrical-services">
-        <div class="svc-icon-lv-electrical-services"></div>
-        <h3 class="svc-title-lv-electrical-services">
-          <a href="#">SF6 Circuit Breaker RMU</a>
-        </h3>
-        <p class="svc-text-lv-electrical-services">
-          SF6 RMUs use sulfur hexafluoride gas as the interrupting medium, offering high dielectric strength,
-          compact footprint, and excellent arc-quenching capabilities. Ideal for medium-voltage networks,
-          especially where high fault levels need to be handled in confined spaces.
-        </p>
-        <button class="svc-cta-lv-electrical-services" data-detail="mcc" aria-label="More about SF6 RMU">
-          <span class="arrow-lv-electrical-services">Learn more</span>
-        </button>
-      </article>
-
-      <!-- 4: Load Break Switch (LBS) RMU (hidden initially) -->
-      <article class="svc-item-lv-electrical-services is-hidden reveal-up-lv-electrical-services">
-        <div class="svc-icon-lv-electrical-services"></div>
-        <h3 class="svc-title-lv-electrical-services">
-          <a href="#">Load Break Switch (LBS) RMU</a>
-        </h3>
-        <p class="svc-text-lv-electrical-services">
-          LBS-type RMUs are equipped with load break switches instead of full circuit breakers. They are
-          designed to switch and isolate circuits under normal load conditions and are a cost-effective
-          option for rural or lower-demand distribution networks where fault levels are relatively low.
-        </p>
-        <button class="svc-cta-lv-electrical-services" data-detail="plc" aria-label="More about LBS RMU">
-          <span class="arrow-lv-electrical-services">Learn more</span>
-        </button>
-      </article>
-
-      <!-- 5: Combined Type RMU -->
-      <article class="svc-item-lv-electrical-services is-hidden reveal-up-lv-electrical-services">
-        <div class="svc-icon-lv-electrical-services"></div>
-        <h3 class="svc-title-lv-electrical-services">
-          <a href="#">Combined Type RMU (ACB / VCB / SF6)</a>
-        </h3>
-        <p class="svc-text-lv-electrical-services">
-          Combined RMUs integrate more than one type of interrupter technology (ACB, VCB, SF6) within
-          a single assembly. This provides flexible protection strategies and allows different feeders
-          or transformers to be protected according to their duty and criticality.
-        </p>
-        <button class="svc-cta-lv-electrical-services" data-detail="pcc" aria-label="More about Combined RMU">
-          <span class="arrow-lv-electrical-services">Learn more</span>
-        </button>
-      </article>
-
-      <!-- 6: RMU Components & Accessories -->
-      <article class="svc-item-lv-electrical-services is-hidden reveal-up-lv-electrical-services">
-        <div class="svc-icon-lv-electrical-services"></div>
-        <h3 class="svc-title-lv-electrical-services">
-          <a href="#">RMU Components & Accessories</a>
-        </h3>
-        <p class="svc-text-lv-electrical-services">
-          Our RMUs include key components such as <strong>load break switches</strong>, <strong>circuit breakers</strong>,
-          <strong>fault passage indicators</strong>, power supply units, <strong>current and potential transformers</strong>,
-          <strong>HRC fuses</strong>, and <strong>solid-insulated busbars</strong>. We also supply matching cables and
-          termination kits for complete project packages.
-        </p>
-        <button class="svc-cta-lv-electrical-services" data-detail="pdb" aria-label="More about RMU Components">
-          <span class="arrow-lv-electrical-services">Learn more</span>
-        </button>
-      </article>
-
-      <!-- 7: Export Experience & Applications -->
-      <article class="svc-item-lv-electrical-services is-hidden reveal-up-lv-electrical-services">
-        <div class="svc-icon-lv-electrical-services"></div>
-        <h3 class="svc-title-lv-electrical-services">
-          <a href="#">Export-Ready RMUs for the Pacific Region</a>
-        </h3>
-        <p class="svc-text-lv-electrical-services">
-          We supply fully assembled, enclosed Ring Main Units for MV/HV power distribution across the
-          Pacific region, with voltage ranges between <strong>7.2 kV and 36 kV</strong>. Our experience
-          includes industrial, commercial, and utility customers requiring compact secondary substations,
-          transformer protection, and multiple input feeders.
-        </p>
-        <button class="svc-cta-lv-electrical-services" data-detail="metering" aria-label="More about Export RMUs">
-          <span class="arrow-lv-electrical-services">Learn more</span>
-        </button>
-      </article>
-
-      <!-- Single details block (if your JS uses it) -->
-      <div class="svc-detail-lv-electrical-services" id="svcDetail" aria-live="polite"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ====================== RMU FEATURES / TECHNICAL ====================== -->
-<section id="features" class="section-solutions-solar-system-solution">
-  <div class="container-solar-system">
-    <div class="solutions-head-solar-system-solution">
-      <div>
-        <p class="solutions-kicker-solar-system-solution reveal-solar-system reveal-top-solar-system-solution">
-          Ring Main Units (RMU) – Medium Voltage Distribution Solutions
-        </p>
-        <h2 class="solutions-title-solar-system-solution reveal-solar-system reveal-bottom-solar-system-solution">
-          Engineered RMUs for Safe and Efficient Power Distribution
-        </h2>
-
-        <!-- intro paragraphs -->
-        <div class="solutions-intro-solar-system-solution">
-          <p class="reveal-solar-system reveal-bottom-solar-system-solution">
-            iEngineering supplies fully assembled Ring Main Units (RMUs) for medium voltage power systems in
-            the <strong>7.2 kV – 36 kV</strong> range. These cabinets are designed as compact, integrated
-            substations that connect, protect, and measure your distribution network, with both indoor and
-            outdoor variants available.
-          </p>
-          <p class="reveal-solar-system reveal-bottom-solar-system-solution">
-            RMUs are ideal for compact secondary substations, transformer protection, and networks that
-            require multiple input feeders to minimise outages and improve continuity of supply.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div id="solutions-grid-solar-system-solution"
-         class="grid-solutions-solar-system-solution is-collapsed-solar-system-solution">
-
-      <!-- 1: RMU Cabinet Design -->
-      <article class="card-solar-system-solution reveal-solar-system reveal-left-solar-system-solution">
-        <h3 class="card-title-solar-system-solution">RMU Cabinet Construction</h3>
-        <p class="card-text-solar-system-solution">
-          RMU cabinets are fully enclosed, factory-assembled metal-enclosed switchgear. They integrate
-          switching, protection, and measurement in a compact footprint while providing clear segregation of
-          live parts and safe operator access.
-        </p>
-        <ul class="card-points-solar-system-solution">
-          <li>Metal-enclosed, compact footprint for space-constrained sites</li>
-          <li>Modular sections for incoming, outgoing, and transformer feeders</li>
-          <li>Engineered for easy installation, replacement, and expansion</li>
-        </ul>
-      </article>
-
-      <!-- 2: Voltage Range & Applications -->
-      <article class="card-solar-system-solution reveal-solar-system reveal-top-solar-system-solution">
-        <h3 class="card-title-solar-system-solution">Voltage Range & Applications</h3>
-        <p class="card-text-solar-system-solution">
-          Our RMUs are suitable for medium voltage networks within a typical voltage range of
-          <strong>7.2 kV – 36 kV</strong>, serving a broad spectrum of applications:
-        </p>
-        <ul class="card-points-solar-system-solution">
-          <li>Industrial plants and manufacturing facilities</li>
-          <li>Commercial complexes and infrastructure projects</li>
-          <li>Utility distribution networks and compact secondary substations</li>
-        </ul>
-      </article>
-
-      <!-- 3: Protection & Switching -->
-      <article class="card-solar-system-solution reveal-solar-system reveal-right-solar-system-solution">
-        <h3 class="card-title-solar-system-solution">Protection & Switching Functions</h3>
-        <p class="card-text-solar-system-solution">
-          RMUs incorporate different interrupter technologies (ACB, VCB, SF6, LBS) to protect transformers and
-          feeders while allowing safe switching and isolation.
-        </p>
-        <ul class="card-points-solar-system-solution">
-          <li>Overcurrent, short-circuit, and earth fault protection</li>
-          <li>Feeder isolation and sectionalising of distribution networks</li>
-          <li>Reduced outage times with ring-fed configurations</li>
-        </ul>
-      </article>
-
-      <!-- 4: Components -->
-      <article class="card-solar-system-solution extra-card-solar-system-solution reveal-solar-system reveal-left-solar-system-solution">
-        <h3 class="card-title-solar-system-solution">Integrated RMU Components</h3>
-        <p class="card-text-solar-system-solution">
-          Each RMU can be equipped with a combination of components depending on your project needs:
-        </p>
-        <ul class="card-points-solar-system-solution">
-          <li>Load break switches and circuit breakers</li>
-          <li>Fault passage indicators and power supply units</li>
-          <li>Current transformers (CTs) and potential transformers (PTs)</li>
-          <li>HRC fuses and solid-insulated busbars</li>
-        </ul>
-      </article>
-
-      <!-- 5: Indoor / Outdoor -->
-      <article class="card-solar-system-solution extra-card-solar-system-solution reveal-solar-system reveal-right-solar-system-solution">
-        <h3 class="card-title-solar-system-solution">Indoor & Outdoor RMU Installations</h3>
-        <p class="card-text-solar-system-solution">
-          RMUs are available in both indoor and outdoor enclosure designs, allowing a consistent solution from
-          substations to field distribution points.
-        </p>
-        <ul class="card-points-solar-system-solution">
-          <li>Indoor RMUs for control rooms and plant rooms</li>
-          <li>Outdoor RMUs with weatherproof enclosures for harsh environments</li>
-          <li>Suitable for utility, industrial, and commercial sites</li>
-        </ul>
-      </article>
-
-      <!-- 6: Reliability & Maintenance -->
-      <article class="card-solar-system-solution extra-card-solar-system-solution reveal-solar-system reveal-bottom-solar-system-solution">
-        <h3 class="card-title-solar-system-solution">Reliability & Maintenance</h3>
-        <p class="card-text-solar-system-solution">
-          RMUs are designed as low-maintenance, long-life assets that improve network reliability and reduce
-          operating costs.
-        </p>
-        <ul class="card-points-solar-system-solution">
-          <li>Maintenance-free or low-maintenance designs depending on technology</li>
-          <li>Fast fault isolation to minimise outages</li>
-          <li>Simple access for inspection, testing, and future upgrades</li>
-        </ul>
-      </article>
-
-      <!-- 7: Accessories & Project Support -->
-      <article class="card-solar-system-solution extra-card-solar-system-solution reveal-solar-system reveal-left-solar-system-solution">
-        <h3 class="card-title-solar-system-solution">Cables, Termination Kits & Project Support</h3>
-        <p class="card-text-solar-system-solution">
-          In addition to RMU supply, we offer associated medium voltage cables, termination kits, and project
-          engineering support to deliver a complete solution for your site.
-        </p>
-        <ul class="card-points-solar-system-solution">
-          <li>Supply of MV/HV cables and termination accessories</li>
-          <li>Support for compact secondary substations and transformer bays</li>
-          <li>Experience in supplying export-ready RMUs to the Pacific region</li>
-        </ul>
-      </article>
-    </div>
-
-    <button id="solutions-toggle-btn-solar-system-solution"
-            class="solutions-viewall-btn-solar-system-solution"
-            type="button"
-            aria-expanded="false">
-      View RMU Features
-    </button>
-
-    <!-- ====================== HIGHLIGHTS ====================== -->
-    <div class="lv-highlights-solar-system-solution">
-      <h3 class="reveal-solar-system reveal-top-solar-system-solution">iEngineering Ring Main Units (RMU)</h3>
-      <ul class="lv-highlight-list">
-        <li class="lv-highlight-item">
-          <i class="ri-check-double-line" aria-hidden="true"></i>
-          Voltage range typically between <strong>7.2 kV – 36 kV</strong>
-        </li>
-        <li class="lv-highlight-item">
-          <i class="ri-check-double-line" aria-hidden="true"></i>
-          Indoor and outdoor RMU cabinets for compact secondary substations
-        </li>
-        <li class="lv-highlight-item">
-          <i class="ri-check-double-line" aria-hidden="true"></i>
-          Multiple interrupter options – ACB, VCB, SF6, and LBS types
-        </li>
-        <li class="lv-highlight-item">
-          <i class="ri-check-double-line" aria-hidden="true"></i>
-          Integrated transformer protection and feeder switching
-        </li>
-        <li class="lv-highlight-item">
-          <i class="ri-check-double-line" aria-hidden="true"></i>
-          Proven experience supplying export-quality RMUs in the Pacific region
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- Get In Touch (unchanged) -->
-<section class="section-lv-electrical-get-in-touch" id="get-in-touch">
-  <div class="stats-wrap-lv-electrical-get-in-touch">
-    <div class="container-lv-electrical-get-in-touch stats-grid-lv-electrical-get-in-touch">
-      <div class="stat-lv-electrical-get-in-touch reveal-lv-electrical-get-in-touch" data-delay="0">
-        <div class="stat-num-lv-electrical-get-in-touch" data-count="98">0</div>
-        <div class="stat-label-lv-electrical-get-in-touch">Satisfied Clients</div>
-      </div>
-      <div class="stat-lv-electrical-get-in-touch reveal-lv-electrical-get-in-touch" data-delay="100">
-        <div class="stat-num-lv-electrical-get-in-touch" data-count="25">0</div>
-        <div class="stat-label-lv-electrical-get-in-touch">Achievement Honors</div>
-      </div>
-      <div class="stat-lv-electrical-get-in-touch reveal-lv-electrical-get-in-touch" data-delay="200">
-        <div class="stat-num-lv-electrical-get-in-touch" data-count="250">0</div>
-        <div class="stat-label-lv-electrical-get-in-touch">Project Finished</div>
-      </div>
-      <div class="stat-lv-electrical-get-in-touch reveal-lv-electrical-get-in-touch" data-delay="300">
-        <div class="stat-num-lv-electrical-get-in-touch" data-count="20">0</div>
-        <div class="stat-label-lv-electrical-get-in-touch">Years of Expertise</div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-lv-electrical-get-in-touch">
-    <div class="card-lv-electrical-get-in-touch">
-      <figure class="media-lv-electrical-get-in-touch reveal-lv-electrical-get-in-touch" data-delay="100">
-        <img src="{% static 'images/contact.jpg' %}" alt="Electrician at work">
-        <figcaption class="phone-badge-lv-electrical-get-in-touch">
-          <span class="badge-icon-lv-electrical-get-in-touch">📞</span>
-          <span class="badge-text-lv-electrical-get-in-touch">
-            Office Number<br><strong>+61 (02) 8318 1490</strong>
-          </span>
-        </figcaption>
-      </figure>
-
-      <div class="content-lv-electrical-get-in-touch reveal-lv-electrical-get-in-touch" data-delay="200">
-        <a href="#contact" class="eyebrow-lv-electrical-get-in-touch">Get In Touch</a>
-        <h2 class="title-lv-electrical-get-in-touch">
-          Call Us Now Or Fill Out The<br>
-          Form To Get Started!
-        </h2>
-        <p class="sub-lv-electrical-get-in-touch">
-          Get a free, no-obligation quote from our experts. Whether it’s RMUs, LV panels, installations,
-          repairs, or upgrades, we provide reliable and efficient solutions.
-        </p>
-        <a href="#contact" class="btn-primary-lv-electrical-get-in-touch js-open-demo">Get a Free Quote</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- RMU Supply Process (renamed from LV Panel Process) -->
-<section class="section-process-lv-electrical-process" id="work-process">
-  <div class="container-lv-electrical-process">
-    <div class="grid-lv-electrical-process">
-      <!-- Left: media + intro -->
-      <div class="intro-lv-electrical-process reveal-left-lv-electrical-process">
-        <a href="#work-process"
-           class="eyebrow-lv-electrical-process reveal-right-lv-electrical-services">
-          RMU Supply Process
-        </a>
-
-        <figure class="media-lv-electrical-process">
-          <img src="{% static 'images/process.avif' %}"
-               alt="RMU supply and commissioning process"
-               class="img-lv-electrical-process reveal-right-lv-electrical-services">
-        </figure>
-
-        <h2 class="title-lv-electrical-process reveal-left-lv-electrical-services">
-          Ring Main Unit (RMU) Supply Process
-        </h2>
-
-        <p class="lead-lv-electrical-process reveal-left-lv-electrical-services">
-          At iEngineering, we provide reliable medium voltage RMU solutions through a complete end-to-end
-          process. We start by understanding your network configuration and site requirements, then prepare
-          detailed designs, SLDs, and technical specifications to meet utility and project standards.
-          Each RMU is manufactured and tested before dispatch, with on-site support for installation, SAT,
-          and commissioning to ensure safe operation and seamless integration with your electrical system.
-        </p>
-
-        <a href="#projects" class="btn-orange-lv-electrical-services reveal-right-lv-electrical-services">
-          View Projects
-        </a>
-      </div>
-
-      <!-- Right: vertical timeline -->
-      <div class="timeline-lv-electrical-process reveal-right-lv-electrical-process">
-        <ol class="timeline-list-lv-electrical-process">
-          <li class="timeline-item-lv-electrical-process reveal-right-lv-electrical-services">
-            <div class="step-icon-lv-electrical-process">
-              <img src="{% static 'images/icons/consultation.png' %}" alt="Consultation">
-            </div>
-            <div class="step-content-lv-electrical-process">
-              <h3 class="step-title-lv-electrical-process">Consultation</h3>
-              <p class="step-text-lv-electrical-process">
-                We review your project, SLD, and site needs to propose the most suitable and cost-effective
-                RMU configuration for your network.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item-lv-electrical-process reveal-right-lv-electrical-services">
-            <div class="step-icon-lv-electrical-process">
-              <img src="{% static 'images/icons/inspection.png' %}" alt="Planning and Inspection">
-            </div>
-            <div class="step-content-lv-electrical-process">
-              <h3 class="step-title-lv-electrical-process">Design, Drawing &amp; Manufacturing</h3>
-              <p class="step-text-lv-electrical-process">
-                Detailed design, GA drawings, and technical documentation are prepared. RMUs are then
-                manufactured using certified components to meet the relevant MV standards and utility
-                requirements.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item-lv-electrical-process reveal-right-lv-electrical-services">
-            <div class="step-icon-lv-electrical-process">
-              <img src="{% static 'images/icons/testing.png' %}" alt="Final Testing">
-            </div>
-            <div class="step-content-lv-electrical-process">
-              <h3 class="step-title-lv-electrical-process">Factory Acceptance Test (FAT)</h3>
-              <p class="step-text-lv-electrical-process">
-                Each RMU undergoes FAT, including wiring checks, insulation resistance, interlock operation,
-                and functional testing. Clients may attend online or in person.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item-lv-electrical-process reveal-right-lv-electrical-services">
-            <div class="step-icon-lv-electrical-process">
-              <img src="{% static 'images/icons/delivery.png' %}" alt="Delivery">
-            </div>
-            <div class="step-content-lv-electrical-process">
-              <h3 class="step-title-lv-electrical-process">Delivery</h3>
-              <p class="step-text-lv-electrical-process">
-                Safe, on-time delivery of RMUs across Australia and the Pacific, complete with documentation,
-                test reports, and lifting/handling instructions.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item-lv-electrical-process reveal-right-lv-electrical-services">
-            <div class="step-icon-lv-electrical-process">
-              <img src="{% static 'images/icons/installation.png' %}" alt="Installation">
-            </div>
-            <div class="step-content-lv-electrical-process">
-              <h3 class="step-title-lv-electrical-process">Installation</h3>
-              <p class="step-text-lv-electrical-process">
-                We provide guidance or supervision for RMU installation, ensuring that cable terminations,
-                earthing, and clearances comply with drawings and safety standards.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item-lv-electrical-process reveal-right-lv-electrical-services">
-            <div class="step-icon-lv-electrical-process">
-              <img src="{% static 'images/icons/sat.png' %}" alt="Site Acceptance Test">
-            </div>
-            <div class="step-content-lv-electrical-process">
-              <h3 class="step-title-lv-electrical-process">Site Acceptance Test (SAT)</h3>
-              <p class="step-text-lv-electrical-process">
-                On-site checks for wiring, insulation, interlocks, and operation, with final adjustments
-                as needed prior to energisation.
-              </p>
-            </div>
-          </li>
-
-          <li class="timeline-item-lv-electrical-process reveal-right-lv-electrical-services">
-            <div class="step-icon-lv-electrical-process">
-              <img src="{% static 'images/icons/commissioning.png' %}" alt="Commissioning">
-            </div>
-            <div class="step-content-lv-electrical-process">
-              <h3 class="step-title-lv-electrical-process">Commissioning</h3>
-              <p class="step-text-lv-electrical-process">
-                Final energisation, protection testing, and system integration ensure your RMUs are fully
-                operational and delivering reliable power distribution.
-              </p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Projects (slight wording tweak) -->
-<section class="lv-electric-panel-project" id="projects">
-  <div class="lv-epp-container">
-    <header class="lv-epp-header">
-      <p class="lv-epp-kicker">Past Project Experience</p>
-      <h2>iEngineering Australia Pty Ltd Electrical Panels, Switchboards & RMU Solutions</h2>
-    </header>
-
-    <div class="lv-epp-grid">
-      <!-- 1 -->
-      <article class="lv-epp-card reveal-left is-visible">
-        <figure class="lv-epp-media">
-          <img src="{% static 'images/projects/p3.avif' %}"
-               alt="ABB customised main switchboard under test" />
-          <span class="lv-epp-year">2024</span>
-        </figure>
-        <div class="lv-epp-body">
-          <h3>Supply &amp; Commissioning of 800A ABB Customised Metering Panels</h3>
-          <p class="lv-epp-client"><strong>Location :</strong> Solomon Island</p>
-          <ul class="lv-epp-points">
-            <li><strong>Scope of Work:</strong> Supply, manufacturing, testing, and commissioning of ABB-designed metering panels.</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- 2 -->
-      <article class="lv-epp-card reveal-right is-visible">
-        <figure class="lv-epp-media">
-          <img src="{% static 'images/projects/p4.avif' %}"
-               alt="High-current ABB distribution board" />
-          <span class="lv-epp-year">2022</span>
-        </figure>
-        <div class="lv-epp-body">
-          <h3>Supply &amp; Commissioning of 1000A ABB Main Switchboards</h3>
-          <p class="lv-epp-client"><strong>Location :</strong> Solomon Island</p>
-          <ul class="lv-epp-points">
-            <li><strong>Scope of Work:</strong> Custom-built main switchboard design, supply, and commissioning.</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- 3 -->
-      <article class="lv-epp-card reveal-left is-visible">
-        <figure class="lv-epp-media">
-          <img src="{% static 'images/projects/p2.avif' %}"
-               alt="Stainless-steel junction boxes with prewired panels" />
-          <span class="lv-epp-year">2020</span>
-        </figure>
-        <div class="lv-epp-body">
-          <h3>Supply of 60 × Stainless-Steel Junction Boxes</h3>
-          <p class="lv-epp-client"><strong>Location :</strong> NSW Australia</p>
-          <ul class="lv-epp-points">
-            <li><strong>Scope of Work:</strong> Supply of fully customised SS junction boxes integrated with prewired electrical panels for harsh environments.</li>
-          </ul>
-        </div>
-      </article>
-
-      <div class="lv-epp-more-wrap">
-        <button type="button" class="lv-epp-more" id="lvEppMoreBtn">More Projects</button>
-      </div>
-
-      <!-- 4 -->
-      <article class="lv-epp-card reveal-right is-hidden">
-        <figure class="lv-epp-media">
-          <img src="{% static 'images/projects/p1.avif' %}"
-               alt="Prewired electrical panels for water infrastructure" />
-          <span class="lv-epp-year">2020</span>
-        </figure>
-        <div class="lv-epp-body">
-          <h3>Supply of MCC Panel to Xylem Water</h3>
-          <p class="lv-epp-client"><strong>Location :</strong> NSW Australia</p>
-          <ul class="lv-epp-points">
-            <li>We have also supplied Power Distribution Cabinets, Bund Pump Control Panels, Pontoon Control Panels, Test Tank Panels, PLC Control Panels, Test Tank Isolator Panels, UV PLC Panels, and Communication Cabinets.</li>
-          </ul>
-        </div>
-      </article>
-
-      <!-- 5 -->
-      <article class="lv-epp-card reveal-left is-hidden">
-        <figure class="lv-epp-media">
-          <img src="{% static 'images/projects/p5.avif' %}"
-               alt="Main switchboard integrated with Cummins genset" />
-          <span class="lv-epp-year">2019</span>
-        </figure>
-        <div class="lv-epp-body">
-          <h3>Supply, Installation &amp; Commissioning of Main Switchboard with 200&nbsp;kVA Cummins Genset</h3>
-          <p class="lv-epp-client"><strong>Location :</strong> Honiara, Solomon Islands</p>
-          <ul class="lv-epp-points">
-            <li><strong>Scope of Work:</strong> Supply, installation & commissioning of main switchboard with 200 kVA Cummins genset.</li>
-          </ul>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- Why Choose Us (unchanged, generic) -->
-<section class="section-why-le-electrical-why-us" id="why-us">
-  <div class="container-le-electrical-why-us">
-    <div class="grid-le-electrical-why-us">
-      <div class="left-le-electrical-why-us">
-        <div class="left-le-electrical-why-us2">
-          <a href="#why-us" class="eyebrow-le-electrical-why-us reveal-left-lv-electrical-services">
-            <span class="bolt-le-electrical-why-us" aria-hidden="true">⚡</span> Why Choose Us
-          </a>
-          <h2 class="title-le-electrical-why-us reveal-left-lv-electrical-services">
-            Delivering Top-Notch Work<br>Every Time
-          </h2>
-
-          <div class="cards-le-electrical-why-us">
-            <article class="card-le-electrical-why-us reveal-top-le-electrical-why-us">
-              <div class="card-icon-le-electrical-why-us" aria-hidden="true">🛠️</div>
-              <h3 class="card-title-le-electrical-why-us">Expert Knowledge</h3>
-              <p class="card-text-le-electrical-why-us">Skilled professionals delivering safe and efficient electrical solutions.</p>
-            </article>
-
-            <article class="card-le-electrical-why-us reveal-right-le-electrical-why-us">
-              <div class="card-icon-le-electrical-why-us" aria-hidden="true">⏱️</div>
-              <h3 class="card-title-le-electrical-why-us">Reliable Service</h3>
-              <p class="card-text-le-electrical-why-us">We complete projects promptly with guaranteed quality.</p>
-            </article>
-
-            <article class="card-le-electrical-why-us reveal-left-le-electrical-why-us">
-              <div class="card-icon-le-electrical-why-us" aria-hidden="true">🛡️</div>
-              <h3 class="card-title-le-electrical-why-us">Safety First</h3>
-              <p class="card-text-le-electrical-why-us">Ensuring the highest safety standards in every job.</p>
-            </article>
-
-            <article class="card-le-electrical-why-us reveal-bottom-le-electrical-why-us">
-              <div class="card-icon-le-electrical-why-us" aria-hidden="true">💬</div>
-              <h3 class="card-title-le-electrical-why-us">Transparent Pricing</h3>
-              <p class="card-text-le-electrical-why-us">Honest, upfront pricing with no hidden fees.</p>
-            </article>
+        <div class="bo-hero-left bo-reveal">
+          <div class="bo-hero-kicker">
+            <span>Steam &amp; Hot Water Systems</span>
           </div>
 
-          <p class="footnote-le-electrical-why-us reveal-left-le-electrical-why-us">
-            Need reliable RMU or electrical solutions? <a href="#contact">Contact us today for expert service!</a>
+          <h1 class="bo-hero-title">
+            Industrial <span>Boilers</span> for Reliable Process &amp; Building Heat
+          </h1>
+
+          <p class="bo-hero-sub">
+            A boiler is a closed vessel used to heat water and generate steam or hot water for industrial and
+            commercial applications—from space heating and process steam to power generation and sterilisation.
           </p>
+          <p class="bo-hero-sub">
+            iEngineering supports boiler deployments for food processing, chemical plants, sugar mills, textile
+            facilities, healthcare, paper mills and FMCG industries across Australia, Fiji, India and the Pacific.
+          </p>
+
+          <div class="bo-hero-cta">
+            <a href="#types" class="bo-btn-primary">View Boiler Types</a>
+            <a href="#contact" class="bo-btn-ghost js-open-demo">Submit Boiler Enquiry</a>
+          </div>
+
+          <div class="bo-hero-stats">
+            <div class="bo-stat">
+              <div class="bo-stat-label">Regions</div>
+              <div class="bo-stat-value">AU • Fiji • India</div>
+            </div>
+            <div class="bo-stat">
+              <div class="bo-stat-label">Applications</div>
+              <div class="bo-stat-value">Process &amp; HVAC</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bo-hero-media bo-reveal">
+          <div class="bo-hero-card">
+            <div class="bo-hero-image-wrap">
+              <!-- Replace with boiler-specific hero image when available -->
+              <img src="{% static './static/images/contact.jpg' %}"
+                   alt="Industrial boiler and steam header in plant" />
+              <div class="bo-hero-pill">Typical steam boiler installation</div>
+            </div>
+            <div class="bo-hero-meta">
+              <h3>Flexible Integration</h3>
+              <p>
+                Support for low, medium and high-pressure boiler systems, burners, pumps, controls and safety
+                devices tailored to your process.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ OVERVIEW ============ -->
+  
+
+  <!-- ============ TYPES / CLASSIFICATION ============ -->
+  <section class="bo-types" id="types">
+    <div class="bo-container">
+      <div class="bo-types-head">
+        <div>
+          <div class="bo-types-kicker">Boiler classification</div>
+          <h2 class="bo-types-title">Boiler Types &amp; Operating Characteristics</h2>
+        </div>
+        <p class="bo-types-sub">
+          Boilers are classified by gas and water flow paths, circulation method, operating pressure,
+          orientation and application. We align these technical characteristics to your thermal demand and process.
+        </p>
+      </div>
+
+      <div class="bo-types-grid">
+
+        <article class="bo-type-card bo-reveal">
+          <div class="bo-type-tag">
+            <span>Flow path</span>
+          </div>
+          <h3 class="bo-type-title">Water-Tube Boilers</h3>
+          <p class="bo-type-text">
+            Water flows inside tubes while hot gases pass over them. Suitable for higher pressures and larger
+            steam capacities—used in power plants, refineries and major process industries.
+          </p>
+          <div class="bo-type-meta">
+            <span>High pressure</span>
+            <span>Large capacity</span>
+          </div>
+        </article>
+
+        <article class="bo-type-card bo-reveal">
+          <div class="bo-type-tag">
+            <span>Flow path</span>
+          </div>
+          <h3 class="bo-type-title">Fire-Tube Boilers</h3>
+          <p class="bo-type-text">
+            Hot gases flow through tubes immersed in water. Compact and robust, they are ideal for low and
+            medium-pressure steam and hot water in food, textile, healthcare and commercial buildings.
+          </p>
+          <div class="bo-type-meta">
+            <span>Compact</span>
+            <span>Low/medium pressure</span>
+          </div>
+        </article>
+
+        <article class="bo-type-card bo-reveal">
+          <div class="bo-type-tag">
+            <span>Energy source</span>
+          </div>
+          <h3 class="bo-type-title">Electric Boilers</h3>
+          <p class="bo-type-text">
+            Use electrical energy to generate steam or hot water. A clean option where flue emissions are restricted,
+            or where electricity tariffs favour electric heating for smaller loads.
+          </p>
+          <div class="bo-type-meta">
+            <span>Zero on-site emissions</span>
+            <span>Quiet operation</span>
+          </div>
+        </article>
+
+        <article class="bo-type-card bo-reveal">
+          <div class="bo-type-tag">
+            <span>Pressure</span>
+          </div>
+          <h3 class="bo-type-title">Low, Medium &amp; High-Pressure</h3>
+          <p class="bo-type-text">
+            Solutions for low-pressure heating systems, medium-pressure process steam and high-pressure or
+            supercritical units for power generation and demanding industrial duties.
+          </p>
+          <div class="bo-type-meta">
+            <span>Heating &amp; process</span>
+            <span>Power generation</span>
+          </div>
+        </article>
+
+        <article class="bo-type-card bo-reveal">
+          <div class="bo-type-tag">
+            <span>Circulation</span>
+          </div>
+          <h3 class="bo-type-title">Natural &amp; Forced Circulation</h3>
+          <p class="bo-type-text">
+            Both buoyancy-driven (natural) and pump-driven (forced) circulation boilers are deployed based on height,
+            layout, pressure requirements and response time.
+          </p>
+          <div class="bo-type-meta">
+            <span>Stable operation</span>
+            <span>Process responsive</span>
+          </div>
+        </article>
+
+        <article class="bo-type-card bo-reveal">
+          <div class="bo-type-tag">
+            <span>Application</span>
+          </div>
+          <h3 class="bo-type-title">Stationary, Portable &amp; Marine</h3>
+          <p class="bo-type-text">
+            Stationary plant boilers, portable units for temporary or remote sites, locomotive and marine boilers,
+            configured with the right mounting, orientation and controls.
+          </p>
+          <div class="bo-type-meta">
+            <span>Site-specific</span>
+            <span>Flexible deployment</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="bo-overview" id="overview">
+    <div class="bo-container">
+      <div class="bo-overview-grid">
+
+        <div class="bo-overview-main bo-reveal">
+          <p class="bo-eyebrow">What we provide</p>
+          <h2 class="bo-section-title">
+            Complete Boiler Solutions – From Selection to Commissioning
+          </h2>
+          <p class="bo-section-text">
+            We help you define thermal loads, select the right boiler type and pressure range,
+            and coordinate supply, installation support and integration with your wider plant.
+          </p>
+          <p class="bo-section-text">
+            Our team works across new installations, replacement units and efficiency upgrades,
+            considering fuel type, emissions, safety standards and lifecycle operating costs.
+          </p>
+
+          <ul class="bo-check-list">
+            <li>
+              <span class="bo-check-dot"></span>
+              Fire-tube, water-tube and electric boiler options
+            </li>
+            <li>
+              <span class="bo-check-dot"></span>
+              Steam &amp; hot water systems for process and building services
+            </li>
+            <li>
+              <span class="bo-check-dot"></span>
+              Burner, pump, valve, control and safety integration
+            </li>
+            <li>
+              <span class="bo-check-dot"></span>
+              Support across Australia, Fiji, India &amp; the Pacific
+            </li>
+          </ul>
+        </div>
+
+         <!-- Right: real boiler photo -->
+        <aside class="bo-overview-media bo-reveal">
+          <figure class="bo-overview-image-wrap">
+            <!-- update the image path to your real boiler image -->
+            <img src="./static/images/contact.jpg"
+                 alt="Industrial boiler installation in plant" />
+          </figure>
+        </aside>
+
+      </div>
+    </div>
+  </section>
+  <!-- ============ PROCESS ============ -->
+  <section class="bo-process" id="process">
+    <div class="bo-container">
+      <div class="bo-process-inner">
+
+        <div class="bo-process-intro bo-reveal">
+          <p class="bo-eyebrow">How we work</p>
+          <h2 class="bo-section-title">Boiler Project Workflow</h2>
+          <p class="bo-process-text">
+            We follow a structured approach—from load assessment and type selection through to supply coordination
+            and commissioning support—so your boiler installation is safe, efficient and compliant.
+          </p>
+          <p class="bo-process-text">
+            Our team can work with your consultants, mechanical contractors and facility team to integrate boilers
+            into existing plant rooms, new builds or retrofit projects.
+          </p>
+        </div>
+
+        <div class="bo-timeline bo-reveal">
+          <ol class="bo-timeline-list">
+            <li class="bo-timeline-item">
+              <div class="bo-timeline-icon">1</div>
+              <div class="bo-timeline-content">
+                <h3 class="bo-timeline-title">Thermal Load &amp; Site Assessment</h3>
+                <p class="bo-timeline-text">
+                  Review of process or building heating demand, operating pressure and temperature, duty cycles,
+                  available utilities, fuel options and installation constraints.
+                </p>
+              </div>
+            </li>
+            <li class="bo-timeline-item">
+              <div class="bo-timeline-icon">2</div>
+              <div class="bo-timeline-content">
+                <h3 class="bo-timeline-title">Boiler Type &amp; Configuration Selection</h3>
+                <p class="bo-timeline-text">
+                  Selection of water-tube, fire-tube or electric boiler; flow path, circulation method, pressure class
+                  and orientation to match performance and regulatory needs.
+                </p>
+              </div>
+            </li>
+            <li class="bo-timeline-item">
+              <div class="bo-timeline-icon">3</div>
+              <div class="bo-timeline-content">
+                <h3 class="bo-timeline-title">Engineering &amp; Supply Coordination</h3>
+                <p class="bo-timeline-text">
+                  Coordination with manufacturers for boiler packages, burners, pumps, feedwater systems, valves
+                  and controls—including documentation, QA and logistics.
+                </p>
+              </div>
+            </li>
+            <li class="bo-timeline-item">
+              <div class="bo-timeline-icon">4</div>
+              <div class="bo-timeline-content">
+                <h3 class="bo-timeline-title">Commissioning Support &amp; Ongoing Optimisation</h3>
+                <p class="bo-timeline-text">
+                  Support for commissioning, performance checks and safety interlocks, followed by ongoing guidance
+                  on efficiency improvements and lifecycle upgrades.
+                </p>
+              </div>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ INDUSTRIES / APPLICATIONS ============ -->
+  <section class="bo-industries" id="applications">
+    <div class="bo-container">
+      <div class="bo-industries-header bo-reveal">
+        <p class="bo-eyebrow">Where boilers are used</p>
+        <h2 class="bo-section-title">Typical Boiler Applications</h2>
+        <p>
+          iEngineering supports boiler and steam/hot-water solutions across a wide range of industries,
+          from food production and chemicals to healthcare and power.
+        </p>
+      </div>
+
+      <div class="bo-industries-grid">
+        <article class="bo-industry-card bo-reveal">
+          <h3 class="bo-industry-title">Food &amp; Beverage Processing</h3>
+          <p class="bo-industry-text">
+            Process steam for cooking, sterilisation, CIP systems and packaging lines.
+          </p>
+        </article>
+
+        <article class="bo-industry-card bo-reveal">
+          <h3 class="bo-industry-title">Chemical &amp; Pharmaceutical</h3>
+          <p class="bo-industry-text">
+            Controlled steam and hot water for reactors, distillation and critical processes.
+          </p>
+        </article>
+
+        <article class="bo-industry-card bo-reveal">
+          <h3 class="bo-industry-title">Refineries &amp; Distilleries</h3>
+          <p class="bo-industry-text">
+            Boiler systems for distillation, stripping, heating and associated balance-of-plant.
+          </p>
+        </article>
+
+        <article class="bo-industry-card bo-reveal">
+          <h3 class="bo-industry-title">Sugar &amp; Paper Mills</h3>
+          <p class="bo-industry-text">
+            Steam for process, cogeneration, drying sections and mill-wide heating loads.
+          </p>
+        </article>
+
+        <article class="bo-industry-card bo-reveal">
+          <h3 class="bo-industry-title">Textiles &amp; Laundries</h3>
+          <p class="bo-industry-text">
+            Steam and hot water for washing, dyeing, pressing and finishing operations.
+          </p>
+        </article>
+
+        <article class="bo-industry-card bo-reveal">
+          <h3 class="bo-industry-title">Healthcare &amp; FMCG</h3>
+          <p class="bo-industry-text">
+            Boiler solutions for hospitals, sterilisation, HVAC systems and FMCG process lines.
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about-us" class="cmms-contact-form-wrap">
+    <div class="cmms-contact-form-inner">
+      <p class="eyebrow-neplan-what-we-bring">About us</p>
+      <h2 class="title-meet-ieng-about">
+        About us – where vision meets execution!
+      </h2>
+      <p class="about-text-abou-ieng">
+        iEngineering is your trusted partner for advanced electrical and energy solutions across Australia, Fiji, and
+        India. We deliver high-quality hardware products—from switchboards and transformers to solar, BESS, EV charging
+        systems and industrial boilers—backed by expert engineering, reliable installation and dedicated local support.
+      </p>
+    </div>
+  </section>
+
+
+
+  <!-- ============ MISSION / VISION / VALUES ============ -->
+<section class="bo-mvv-section" id="mission">
+  <div class="bo-container">
+
+    <!-- Tabs -->
+    <div class="bo-mvv-tabs">
+      <button class="bo-mvv-tab is-active" data-tab="mission">Mission</button>
+      <button class="bo-mvv-tab" data-tab="vision">Vision</button>
+      <button class="bo-mvv-tab" data-tab="values">Values</button>
+    </div>
+
+    <!-- Content wrapper -->
+    <div class="bo-mvv-content-wrap">
+
+      <!-- Mission -->
+      <div class="bo-mvv-content is-active" data-tab="mission">
+        <div class="bo-mvv-text">
+          <h2>Our Mission</h2>
+          <p>
+            At iEngineering Australia, our mission is to enhance efficiency, ensure quality
+            control, and deliver customer satisfaction through innovative engineering
+            solutions. We are committed to global standards and sustainable solutions that
+            create long-term value for our clients and communities.
+          </p>
+        </div>
+        <div class="bo-mvv-image">
+          <!-- UPDATE with your mission image -->
+          <img src="./static/images/contact.jpg' %}"
+               alt="Strategic mission graphic" />
         </div>
       </div>
 
-      <figure class="media-le-electrical-why-us reveal-right-le-electrical-why-us">
-        <img src="{% static 'images/del.avif' %}"
-             alt="Delivering Top-Notch Work Every Time"
-             class="img-le-electrical-why-us">
-      </figure>
+      <!-- Vision -->
+      <div class="bo-mvv-content" data-tab="vision">
+        <div class="bo-mvv-text">
+          <h2>Our Vision</h2>
+          <p>
+            To be a trusted engineering partner across Australia, Fiji, India and the
+            Pacific—delivering intelligent, resilient and low-carbon infrastructure for
+            utilities, industry and the built environment.
+          </p>
+        </div>
+        <div class="bo-mvv-image">
+          <!-- UPDATE with your vision image (or reuse same) -->
+          <img src="{% static './static/images/contact.jpg' %}"
+               alt="Strategic vision graphic" />
+        </div>
+      </div>
 
-      <a href="#contact" class="floating-cta-le-electrical-why-us" aria-label="Contact Us">
-        <span>Contact<br>Us</span>
-      </a>
+      <!-- Values -->
+      <div class="bo-mvv-content" data-tab="values">
+        <div class="bo-mvv-text">
+          <h2>Our Values</h2>
+          <p>
+            We operate with integrity, safety and accountability. Our team focuses on
+            practical innovation, clear communication and long-term partnerships so that
+            every project delivers real operational and commercial benefits.
+          </p>
+        </div>
+        <div class="bo-mvv-image">
+          <!-- UPDATE with your values image (or reuse same) -->
+          <img src="{% static 'images/values-diagram.png' %}"
+               alt="Core values graphic" />
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
 
-<!-- About us (kept same) -->
-<section id="about-us" class="cmms-contact-form-wrap">
-  <div class="cmms-contact-form-inner">
-    <a href="#contact" class="cmms-contact-form-badge2 reveal-up">
-      <p class="eyebrow-neplan-what-we-bring reveal-up">About us</p>
-    </a>
-    <h2 class="title-meet-ieng-about reveal-up"> About us – where vision meets execution! </h2>
-    <p class="about-text-abou-ieng reveal-up">
-      iEngineering is your trusted partner for advanced electrical and energy solutions across Australia, Fiji, and India.
-      We deliver high-quality hardware products from switchboards and transformers to solar, BESS, RMU, and EV charging systems
-      backed by expert engineering, reliable installation, and dedicated local support.
-    </p>
-  </div>
-</section>
+  <!-- CONTACT -->
+  <section id="contact">
+    {% include "components/contact_block.html" with form_only=True %}
+  </section>
 
-<!-- Mission / Vision / Values (unchanged structure) -->
-<section class="-gemini-mission-section">
-  <div class="-gemini-content-wrapper">
-    <div class="-gemini-tabs-container">
-      <button class="-gemini-tab active" data-tab="mission">Mission</button>
-      <button class="-gemini-tab" data-tab="vision">Vision</button>
-      <button class="-gemini-tab" data-tab="values">Values</button>
-    </div>
+  {% include 'footer.html' %}
 
-    <div class="-gemini-content active reveal-mobility" id="mission-content">
-      <div class="-gemini-text-content">
-        <h2 class="title-meet-ieng-about reveal-mobility">Our Mission</h2>
-        <p class="reveal-mobility">
-          At iEngineering Australia, our mission is to enhance efficiency, ensure quality control, and deliver
-          customer satisfaction through innovative engineering solutions. We are committed to global standards
-          and sustainable solutions that create long-term value for our clients and communities.
-        </p>
-      </div>
-      <div class="-gemini-image-content reveal-mobility">
-        <img src="{% static 'images/mission.avif' %}" alt="Mission Image">
-      </div>
-    </div>
+  <!-- JS includes -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+  <script defer src="{% static 'js/demo_form.js' %}"></script>
+  <script defer src="{% static 'js/main.js' %}"></script>
+  <script defer src="{% static 'js/neplan.js' %}"></script>
 
-    <div class="-gemini-content" id="vision-content">
-      <div class="-gemini-text-content reveal-mobility">
-        <h2 class="title-meet-ieng-about reveal-mobility">Our Vision</h2>
-        <p class="reveal-mobility">
-          Our vision is to be a global leader in engineering solutions, driving industry leadership, innovation,
-          and customer-centric growth. We aim to inspire through global influence, foster expansion and growth,
-          and play an inspirational role in shaping the future of engineering.
-        </p>
-      </div>
-      <div class="-gemini-image-content reveal-mobility">
-        <img src="{% static 'images/vision.avif' %}" alt="Vision Image">
-      </div>
-    </div>
+  <!-- Simple reveal script for .bo-reveal -->
+  <script>
+    (function () {
+      const els = document.querySelectorAll(".bo-reveal");
+      if (!("IntersectionObserver" in window)) {
+        els.forEach((el) => el.classList.add("is-visible"));
+        return;
+      }
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              e.target.classList.add("is-visible");
+              io.unobserve(e.target);
+            }
+          });
+        },
+        { threshold: 0.15 }
+      );
+      els.forEach((el) => io.observe(el));
+    })();
 
-    <div class="-gemini-content reveal-mobility" id="values-content">
-      <div class="-gemini-text-content">
-        <h2 class="title-meet-ieng-about reveal-mobility">Our Values</h2>
-        <p class="reveal-mobility">
-          Our values guide everything we do: integrity & ethics, a strong commitment to quality, and diversity & inclusion.
-          Safety, reliability, and continuous improvement are the cornerstones of our success, enabling us to deliver trusted
-          and innovative solutions worldwide.
-        </p>
-      </div>
-      <div class="-gemini-image-content reveal-mobility">
-        <img src="{% static 'images/values.avif' %}" alt="Values Image">
-      </div>
-    </div>
-  </div>
-</section>
 
-<!-- Our Journey / Where We Operate (unchanged except minor wording) -->
-<section class="section-meet-ieng-about" id="team">
-  <div class="container-meet-ieng-about">
-    <header class="header-meet-ieng-about">
-      <p class="eyebrow-neplan-what-we-bring reveal-up">Our Journey</p>
-      <p class="subtitle-meet-ieng-about reveal-up">
-        Founded in 2013, iEngineering Australia delivers a comprehensive range of high-quality electrical
-        and energy hardware solutions tailored for Australian and Pacific conditions. From design and
-        engineering to manufacturing, testing, and commissioning support, we ensure every product—whether
-        switchboards, RMUs, transformers, solar systems, or EV chargers—is safe, reliable, and built to last.
-      </p>
-    </header>
-  </div>
-</section>
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const tabs = document.querySelectorAll(".bo-mvv-tab");
+    const panels = document.querySelectorAll(".bo-mvv-content");
 
-<section class="section-meet-ieng-about" id="team">
-  <div class="container-meet-ieng-about">
-    <header class="header-meet-ieng-about">
-      <p class="eyebrow-neplan-what-we-bring reveal-up">Where We Operate</p>
-      <p class="subtitle-meet-ieng-about reveal-up saw">
-        iEngineering Australia operates across Australia, Fiji, and India, delivering reliable technology and asset
-        management solutions to organisations of all sizes—from local enterprises to large multinational companies.
-      </p>
-    </header>
+    if (!tabs.length) return;
 
-    <!-- Locations -->
-    <section class="neplan-locations-wrap">
-      <div class="neplan-locations-grid">
-        <!-- Australia – Sydney -->
-        <article class="neplan-locations-card neplan-locations-card--au">
-          <header class="neplan-locations-header">
-            <span class="neplan-locations-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-                <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
-                      fill="currentColor" />
-              </svg>
-            </span>
-            <h3 class="neplan-locations-title reveal-right">Australia – Sydney</h3>
-          </header>
-          <p class="neplan-locations-phone reveal-right"><strong>Phone:</strong> +61 (02) 8318 1490</p>
-          <p class="neplan-locations-email reveal-right">
-            <strong>Email:</strong>
-            <a href="mailto:dnaiker@iengaust.com.au">dnaiker@iengaust.com.au</a>
-          </p>
-          <p class="neplan-locations-address reveal-right">
-            Warawara Cct, Quakers Hill NSW 2763, Australia
-          </p>
-          <a class="neplan-locations-map reveal-right"
-             target="_blank"
-             rel="noopener"
-             href="https://www.google.com/maps/place/iEngineering+Australia/@-33.7235328,150.8746483,349m/data=!3m3!1e3!4b1!5s0x6b12994c8f100b83:0xc573a44ab66823ee!4m6!3m5!1s0x1b47c40472e681d:0x111e8f0e95cba38f!8m2!3d-33.7235345!4d150.8756411!16s%2Fg%2F11b7cc3cnq?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTEwOS4wIKXMDSoASAFQAw%3D%3D">
-            View map
-          </a>
-        </article>
+    tabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const target = tab.dataset.tab;
 
-        <!-- India – Pune -->
-        <article class="neplan-locations-card neplan-locations-card--in">
-          <header class="neplan-locations-header">
-            <span class="neplan-locations-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-                <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
-                      fill="currentColor" />
-              </svg>
-            </span>
-            <h3 class="neplan-locations-title reveal-right">India – Pune</h3>
-          </header>
-          <p class="neplan-locations-phone reveal-right"><strong>Phone:</strong> +91 9168627258</p>
-          <p class="neplan-locations-email reveal-right">
-            <strong>Email:</strong>
-            <a href="mailto:shila@iengaust.com.au">shila@iengaust.com.au</a>
-          </p>
-          <p class="neplan-locations-address reveal-right">
-            Navale IT Zone, Office No. 501, 5th Floor, A-Wing, Near Navale Bridge,
-            Mumbai-Bangalore Highway, Narhe, Pune – 411041.
-          </p>
-          <a class="neplan-locations-map reveal-right"
-             target="_blank"
-             rel="noopener"
-             href="https://www.google.com/maps/place/Truecue+iEngineering+India+Pvt+Ltd/@18.4598087,73.820123,796m/data=!3m2!1e3!4b1!4m6!3m5!1s0x3bc2bf393571e765:0x7f82ec8c697cb907!8m2!3d18.4598036!4d73.8226979!16s%2Fg%2F11g2wv4fpd?hl=en-US&entry=ttu&g_ep=EgoyMDI1MTEwOS4wIKXMDSoASAFQAw%3D%3D">
-            View map
-          </a>
-        </article>
+        // update tabs
+        tabs.forEach((t) => t.classList.toggle("is-active", t === tab));
 
-        <!-- Fiji – Suva -->
-        <article class="neplan-locations-card neplan-locations-card--fj">
-          <header class="neplan-locations-header">
-            <span class="neplan-locations-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
-                <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"
-                      fill="currentColor" />
-              </svg>
-            </span>
-            <h3 class="neplan-locations-title reveal-right">Fiji – Suva</h3>
-          </header>
-          <p class="neplan-locations-phone reveal-right"><strong>Phone:</strong> +679 9488589</p>
-          <p class="neplan-locations-email reveal-right">
-            <strong>Email:</strong>
-            <a href="mailto:dnaiker@iengaust.com.au">dnaiker@iengaust.com.au</a>
-          </p>
-          <p class="neplan-locations-address reveal-right">
-            Lot 17, River Drive, Pacific Harbour, Navua, Suva, Fiji.
-          </p>
-          <a class="neplan-locations-map reveal-right"
-             target="_blank"
-             rel="noopener"
-             href="https://www.google.com/maps/search/Lot+17,+River+Drive+Pacific+Harbour+Navua+Suva+Fiji/">
-            View map
-          </a>
-        </article>
-      </div>
-    </section>
-  </div>
-</section>
+        // update content
+        panels.forEach((panel) => {
+          const match = panel.dataset.tab === target;
+          panel.classList.toggle("is-active", match);
+        });
+      });
+    });
+  });
+</script>
 
-<!-- Contact section (unchanged) -->
-<section id="contact">
-  {% include "components/contact_block.html" with form_only=True %}
-</section>
-
-{% include 'footer.html' %}
-
-<!-- JS includes (same as template) -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-<script defer src="{% static 'js/demo_form.js' %}"></script>
-<script defer src="{% static 'js/main.js' %}"></script>
-<script defer src="{% static 'js/neplan.js'%}"></script>
-
-<!-- Existing intersection observers and reveal scripts from your template kept as-is -->
-
-<!-- Google Tag Manager (noscript) -->
-<noscript>
-  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQV8LKX"
-          height="0" width="0"
-          style="display:none;visibility:hidden"></iframe>
-</noscript>
-<!-- End Google Tag Manager (noscript) -->
 </body>
 </html>
