@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="XGSLab is advanced software for earthing, grounding, lightning protection, and EMF analysis in Australian power systems.">
+  <meta name="description" content="">
   <title>Ground Support Equipment (GSE)</title>
 
   <!-- Google Tag Manager -->
@@ -197,8 +197,8 @@
 
   <article class="bo-type-card bo-reveal">
     <div class="bo-type-tag"><span>Passenger handling</span></div>
-    <h3 class="bo-type-title">PRM / Ambulift</h3>
-    <p class="bo-type-text">Accessible passenger lifting solutions for inclusive terminal operations.</p>
+    <h3 class="bo-type-title">Bulk Luggage Carts</h3>
+    <p class="bo-type-text">our bulk luggage carts improve the efficiency of baggage transportation across your airport.</p>
     <div class="bo-type-meta"><span>Accessibility</span><span>Comfort</span></div>
 
     <div class="bo-type-actions">
@@ -250,7 +250,7 @@
     </div>
   </article>
 
-  <article class="bo-type-card bo-reveal">
+  {% comment %} <article class="bo-type-card bo-reveal">
     <div class="bo-type-tag"><span>Specialised</span></div>
     <h3 class="bo-type-title">De-icing / Anti-icing</h3>
     <p class="bo-type-text">Specialised equipment depending on climate and airport requirements.</p>
@@ -259,7 +259,7 @@
     <div class="bo-type-actions">
       <a class="bo-type-btn" href="#deicing">More info</a>
     </div>
-  </article>
+  </article> {% endcomment %}
 
   <article class="bo-type-card bo-reveal">
     <div class="bo-type-tag"><span>Utility</span></div>
@@ -268,7 +268,7 @@
     <div class="bo-type-meta"><span>Uptime</span><span>Site-specific</span></div>
 
     <div class="bo-type-actions">
-      <a class="bo-type-btn" href="#utility">More info</a>
+      <a class="bo-type-btn" href="#deicing">More info</a>
     </div>
   </article>
 
@@ -279,7 +279,7 @@
     <div class="bo-type-meta"><span>Passenger flow</span><span>Reliable</span></div>
 
     <div class="bo-type-actions">
-      <a class="bo-type-btn" href="#transport">More info</a>
+      <a class="bo-type-btn" href="#utility">More info</a>
     </div>
   </article>
 
@@ -466,29 +466,30 @@
   </section>
 
   <!-- 6: Image LEFT -->
-  <section class="bo-feature bo-feature--alt" id="ambulift">
-    <div class="bo-container">
-      <div class="bo-feature-grid is-reverse bo-reveal">
-        <div class="bo-feature-text">
-          <p class="bo-eyebrow">6. PRM / Ambulift</p>
-          <h2 class="bo-section-title">Accessible Passenger Support</h2>
-          <p class="bo-section-text">
-            Passenger lifting equipment supporting inclusive operations with safe, comfortable transfer to aircraft.
-          </p>
-          <ul class="bo-feature-list">
-            <li>Height and platform alignment for multiple aircraft</li>
-            <li>Safety rails and secure passenger handling</li>
-            <li>Site-specific configuration based on stand layout</li>
-            <li>Maintainable design for dependable service</li>
-          </ul>
-        </div>
+<section class="bo-feature bo-feature--alt" id="ambulift">
+  <div class="bo-container">
+    <div class="bo-feature-grid is-reverse bo-reveal">
+      <div class="bo-feature-text">
+        <p class="bo-eyebrow">06. Bulk Luggage Carts</p>
+        <h2 class="bo-section-title">Efficient Baggage Transportation</h2>
+        <p class="bo-section-text">
+          Designed for large-scale luggage handling, our bulk luggage carts improve the efficiency of baggage transportation across your airport.
+        </p>
+        <ul class="bo-feature-list">
+          <li>High-capacity platform for bulk baggage movement</li>
+          <li>Smooth manoeuvrability with durable wheels for ramp operations</li>
+          <li>Rugged, corrosion-resistant construction for long service life</li>
+          <li>Easy towing and quick turnaround to reduce handling time</li>
+        </ul>
+      </div>
 
-        <div class="bo-feature-media">
-            <img src="{% static 'images/boiler.avif' %}" alt="GSE overview image">
-        </div>
+      <div class="bo-feature-media">
+        <img src="{% static 'images/gse/bulk_luggage.avif' %}" alt="Bulk Luggage Cart">
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- 7: Image RIGHT -->
   <section class="bo-feature" id="gpu-pca">
@@ -520,32 +521,7 @@
     <div class="bo-container">
       <div class="bo-feature-grid is-reverse bo-reveal">
         <div class="bo-feature-text">
-          <p class="bo-eyebrow">8. ASU (Air Start Unit)</p>
-          <h2 class="bo-section-title">Pneumatic Start Support</h2>
-          <p class="bo-section-text">
-            Air start units supporting aircraft requiring pneumatic start capabilities—selected for operational readiness and reliability.
-          </p>
-          <ul class="bo-feature-list">
-            <li>Mobile deployment suited to ramp workflows</li>
-            <li>Controls and safety features for operator handling</li>
-            <li>Maintainable configuration for high uptime</li>
-            <li>Aligned to your aircraft and operational needs</li>
-          </ul>
-        </div>
-
-        <div class="bo-feature-media">
-            <img src="{% static 'images/boiler.avif' %}" alt="GSE overview image">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 9: Image RIGHT -->
-  <section class="bo-feature" id="water-lav">
-    <div class="bo-container">
-      <div class="bo-feature-grid bo-reveal">
-        <div class="bo-feature-text">
-          <p class="bo-eyebrow">9. Potable Water &amp; Lavatory Service</p>
+          <p class="bo-eyebrow">8. Potable Water &amp; Lavatory Service</p>
           <h2 class="bo-section-title">Hygienic, Practical Aircraft Servicing</h2>
           <p class="bo-section-text">
             Water and lavatory service units configured with safe handling, tank sizing and practical hose routing to suit operations.
@@ -560,6 +536,31 @@
 
         <div class="bo-feature-media">
             <img src="{% static 'images/gse/aircraft_lavatory.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9: Image RIGHT -->
+  <section class="bo-feature" id="water-lav">
+    <div class="bo-container">
+      <div class="bo-feature-grid bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">09. Catering Trucks</p>
+          <h2 class="bo-section-title">High-Lift Servicing &amp; Turnaround Logistics</h2>
+          <p class="bo-section-text">
+            Catering lift vehicles configured for stability, safe platform movement and maintainability—supporting efficient servicing.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Lift height alignment to aircraft types</li>
+            <li>Stable platform and safe operation features</li>
+            <li>Layout designed for serviceability and uptime</li>
+            <li>Optional customisation for operational needs</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/catering_trucks.avif' %}" alt="GSE overview image">
         </div>
       </div>
     </div>
@@ -595,32 +596,7 @@
     <div class="bo-container">
       <div class="bo-feature-grid bo-reveal">
         <div class="bo-feature-text">
-          <p class="bo-eyebrow">11. De-icing / Anti-icing</p>
-          <h2 class="bo-section-title">Specialised Safety Equipment for Cold Conditions</h2>
-          <p class="bo-section-text">
-            De-icing and anti-icing solutions configured for airport climate conditions and operational requirements.
-          </p>
-          <ul class="bo-feature-list">
-            <li>Selection based on climate and aircraft operations</li>
-            <li>Safe movement, spray controls and stable lift arrangements</li>
-            <li>Maintainability and uptime considerations</li>
-            <li>Site-specific configuration for ramps/stands</li>
-          </ul>
-        </div>
-
-        <div class="bo-feature-media">
-            <img src="{% static 'images/boiler.avif' %}" alt="GSE overview image">
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 12: Image LEFT -->
-  <section class="bo-feature bo-feature--alt" id="utility">
-    <div class="bo-container">
-      <div class="bo-feature-grid is-reverse bo-reveal">
-        <div class="bo-feature-text">
-          <p class="bo-eyebrow">12. Cleaning / Utility / Maintenance Platforms</p>
+          <p class="bo-eyebrow">11. Cleaning / Utility / Maintenance Platforms</p>
           <h2 class="bo-section-title">Airside Support for Uptime &amp; Servicing</h2>
           <p class="bo-section-text">
             Utility equipment supporting safe servicing, aircraft cleaning and maintenance access—configured to site workflows.
@@ -640,8 +616,33 @@
     </div>
   </section>
 
+  <!-- 12: Image LEFT -->
+  <section class="bo-feature bo-feature--alt" id="utility">
+    <div class="bo-container">
+      <div class="bo-feature-grid is-reverse bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">12. Airside Buses / Crew Transport</p>
+          <h2 class="bo-section-title">Airport Apron Buses</h2>
+          <p class="bo-section-text">
+            Airside transport vehicles supporting terminal-to-aircraft operations and stand logistics.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Passenger transfer buses (airside operations)</li>
+            <li>Crew transport solutions</li>
+            <li>Configured for safety and operational reliability</li>
+            <li>Fleet planning aligned to passenger flow</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/airport_apron.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 13: Image RIGHT -->
-  <section class="bo-feature" id="transport">
+  {% comment %} <section class="bo-feature" id="transport">
     <div class="bo-container">
       <div class="bo-feature-grid bo-reveal">
         <div class="bo-feature-text">
@@ -663,7 +664,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> {% endcomment %}
 
   <!-- ============ WORKFLOW ============ -->
   <section class="bo-process" id="workflow">
