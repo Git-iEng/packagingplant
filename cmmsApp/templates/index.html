@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Industrial Boilers | iEngineering</title>
+  <meta name="description" content="XGSLab is advanced software for earthing, grounding, lightning protection, and EMF analysis in Australian power systems.">
+  <title>Ground Support Equipment (GSE)</title>
 
   <!-- Google Tag Manager -->
   <script>
@@ -27,9 +28,6 @@
   <link rel="stylesheet" href="{% static 'css/consult-block.css' %}">
   <link rel="stylesheet" href="{% static 'css/footer.css' %}">
 
-  <!-- Boiler-specific CSS -->
-  <link rel="stylesheet" href="{% static 'css/home.css' %}">
-
   <link rel="icon" href="{% static 'images/logo1.png' %}">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -39,11 +37,9 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TKQV8LKX"
-            height="0"
-            width="0"
+            height="0" width="0"
             style="display:none;visibility:hidden"></iframe>
   </noscript>
-  <!-- End Google Tag Manager (noscript) -->
 
   {% include 'header.html' %}
   {% include 'request_demo_modal.html' %}
@@ -55,52 +51,40 @@
 
         <div class="bo-hero-left bo-reveal">
           <div class="bo-hero-kicker">
-            <span>Steam &amp; Hot Water Systems</span>
+            <span>Aviation Ground Support Equipment</span>
           </div>
 
           <h1 class="bo-hero-title">
-            Industrial <span>Boilers</span> for Reliable Process &amp; Building Heat
+            <span>Ground Support Equipment (GSE)</span> for Safe, Fast Turnarounds
           </h1>
 
           <p class="bo-hero-sub">
-            A boiler is a closed vessel used to heat water and generate steam or hot water for industrial and
-            commercial applications—from space heating and process steam to power generation and sterilisation.
+            iEngineering supports airports, airlines, ground handlers and cargo terminals with reliable GSE packages
+            aligned to aircraft types, stand layout, duty cycles and ramp constraints.
           </p>
           <p class="bo-hero-sub">
-            iEngineering supports boiler deployments for food processing, chemical plants, sugar mills, textile
-            facilities, healthcare, paper mills and FMCG industries across Australia, Fiji, India and the Pacific.
+            We support diesel, electric and hybrid fleets with configuration guidance, documentation, logistics coordination
+            and deployment support across Australia, Fiji and India.
           </p>
 
           <div class="bo-hero-cta">
-            <a href="#types" class="bo-btn-primary">View Boiler Types</a>
-            <a href="#contact" class="bo-btn-ghost js-open-demo">Submit Boiler Enquiry</a>
-          </div>
-
-          <div class="bo-hero-stats">
-            <div class="bo-stat">
-              <div class="bo-stat-label">Regions</div>
-              <div class="bo-stat-value">AU • Fiji • India</div>
-            </div>
-            <div class="bo-stat">
-              <div class="bo-stat-label">Applications</div>
-              <div class="bo-stat-value">Process &amp; HVAC</div>
-            </div>
+            <a href="#types" class="bo-btn-primary">View GSE Categories</a>
+            <a href="#contact" class="bo-btn-ghost js-open-demo">Request Quote</a>
           </div>
         </div>
 
         <div class="bo-hero-media bo-reveal">
           <div class="bo-hero-card">
             <div class="bo-hero-image-wrap">
-              <!-- Replace with boiler-specific hero image when available -->
-              <img src="{% static './static/images/contact.jpg' %}"
-                   alt="Industrial boiler and steam header in plant" />
-              <div class="bo-hero-pill">Typical steam boiler installation</div>
+              <!-- Replace with real hero image later -->
+              <img src="{% static 'images/gse/gse.avif' %}" alt="GSE overview image">
+              <div class="bo-hero-pill">Equipment packages for apron & terminal operations</div>
             </div>
+
             <div class="bo-hero-meta">
-              <h3>Flexible Integration</h3>
+              <h3>Modern Fleet Options</h3>
               <p>
-                Support for low, medium and high-pressure boiler systems, burners, pumps, controls and safety
-                devices tailored to your process.
+                Selections matched to your operation—aircraft mix, throughput, safety, maintainability and lifecycle cost.
               </p>
             </div>
           </div>
@@ -111,183 +95,587 @@
   </section>
 
   <!-- ============ OVERVIEW ============ -->
-  
-
-  <!-- ============ TYPES / CLASSIFICATION ============ -->
-  <section class="bo-types" id="types">
-    <div class="bo-container">
-      <div class="bo-types-head">
-        <div>
-          <div class="bo-types-kicker">Boiler classification</div>
-          <h2 class="bo-types-title">Boiler Types &amp; Operating Characteristics</h2>
-        </div>
-        <p class="bo-types-sub">
-          Boilers are classified by gas and water flow paths, circulation method, operating pressure,
-          orientation and application. We align these technical characteristics to your thermal demand and process.
-        </p>
-      </div>
-
-      <div class="bo-types-grid">
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Flow path</span>
-          </div>
-          <h3 class="bo-type-title">Water-Tube Boilers</h3>
-          <p class="bo-type-text">
-            Water flows inside tubes while hot gases pass over them. Suitable for higher pressures and larger
-            steam capacities—used in power plants, refineries and major process industries.
-          </p>
-          <div class="bo-type-meta">
-            <span>High pressure</span>
-            <span>Large capacity</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Flow path</span>
-          </div>
-          <h3 class="bo-type-title">Fire-Tube Boilers</h3>
-          <p class="bo-type-text">
-            Hot gases flow through tubes immersed in water. Compact and robust, they are ideal for low and
-            medium-pressure steam and hot water in food, textile, healthcare and commercial buildings.
-          </p>
-          <div class="bo-type-meta">
-            <span>Compact</span>
-            <span>Low/medium pressure</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Energy source</span>
-          </div>
-          <h3 class="bo-type-title">Electric Boilers</h3>
-          <p class="bo-type-text">
-            Use electrical energy to generate steam or hot water. A clean option where flue emissions are restricted,
-            or where electricity tariffs favour electric heating for smaller loads.
-          </p>
-          <div class="bo-type-meta">
-            <span>Zero on-site emissions</span>
-            <span>Quiet operation</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Pressure</span>
-          </div>
-          <h3 class="bo-type-title">Low, Medium &amp; High-Pressure</h3>
-          <p class="bo-type-text">
-            Solutions for low-pressure heating systems, medium-pressure process steam and high-pressure or
-            supercritical units for power generation and demanding industrial duties.
-          </p>
-          <div class="bo-type-meta">
-            <span>Heating &amp; process</span>
-            <span>Power generation</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Circulation</span>
-          </div>
-          <h3 class="bo-type-title">Natural &amp; Forced Circulation</h3>
-          <p class="bo-type-text">
-            Both buoyancy-driven (natural) and pump-driven (forced) circulation boilers are deployed based on height,
-            layout, pressure requirements and response time.
-          </p>
-          <div class="bo-type-meta">
-            <span>Stable operation</span>
-            <span>Process responsive</span>
-          </div>
-        </article>
-
-        <article class="bo-type-card bo-reveal">
-          <div class="bo-type-tag">
-            <span>Application</span>
-          </div>
-          <h3 class="bo-type-title">Stationary, Portable &amp; Marine</h3>
-          <p class="bo-type-text">
-            Stationary plant boilers, portable units for temporary or remote sites, locomotive and marine boilers,
-            configured with the right mounting, orientation and controls.
-          </p>
-          <div class="bo-type-meta">
-            <span>Site-specific</span>
-            <span>Flexible deployment</span>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="bo-overview" id="overview">
+  <section class="bo-overview" id="services">
     <div class="bo-container">
       <div class="bo-overview-grid">
 
         <div class="bo-overview-main bo-reveal">
           <p class="bo-eyebrow">What we provide</p>
           <h2 class="bo-section-title">
-            Complete Boiler Solutions – From Selection to Commissioning
+            Complete GSE Solutions – Selection to Deployment Support
           </h2>
           <p class="bo-section-text">
-            We help you define thermal loads, select the right boiler type and pressure range,
-            and coordinate supply, installation support and integration with your wider plant.
-          </p>
-          <p class="bo-section-text">
-            Our team works across new installations, replacement units and efficiency upgrades,
-            considering fuel type, emissions, safety standards and lifecycle operating costs.
+            We help define your GSE needs, recommend practical packages, and support supply coordination and rollout.
+            Our approach focuses on operational fit, safety, uptime and lifecycle performance.
           </p>
 
           <ul class="bo-check-list">
-            <li>
-              <span class="bo-check-dot"></span>
-              Fire-tube, water-tube and electric boiler options
-            </li>
-            <li>
-              <span class="bo-check-dot"></span>
-              Steam &amp; hot water systems for process and building services
-            </li>
-            <li>
-              <span class="bo-check-dot"></span>
-              Burner, pump, valve, control and safety integration
-            </li>
-            <li>
-              <span class="bo-check-dot"></span>
-              Support across Australia, Fiji, India &amp; the Pacific
-            </li>
+            <li><span class="bo-check-dot"></span> Fleet planning for stands, gates, cargo and MRO areas</li>
+            <li><span class="bo-check-dot"></span> Diesel / Electric / Hybrid options and charging considerations</li>
+            <li><span class="bo-check-dot"></span> Ramp safety + maintainability-driven selection</li>
+            <li><span class="bo-check-dot"></span> Support across Australia, Fiji, India & the Pacific</li>
           </ul>
         </div>
 
-         <!-- Right: real boiler photo -->
         <aside class="bo-overview-media bo-reveal">
-          <figure class="bo-overview-image-wrap">
-            <!-- update the image path to your real boiler image -->
-            <img src="./static/images/contact.jpg"
-                 alt="Industrial boiler installation in plant" />
-          </figure>
+          <img src="{% static 'images/gse/complete-gse.avif' %}" alt="GSE overview image">
         </aside>
 
       </div>
     </div>
   </section>
-  <!-- ============ PROCESS ============ -->
-  <section class="bo-process" id="process">
+
+  <!-- ============ TYPES / CATEGORY GRID (DARK) ============ -->
+  <section class="bo-types" id="types">
+    <div class="bo-container">
+      <div class="bo-types-head">
+        <div>
+          <div class="bo-types-kicker">GSE CATEGORIES</div>
+          <h2 class="bo-types-title">Equipment Range &amp; Typical Packages</h2>
+        </div>
+        <p class="bo-types-sub">
+          Explore key equipment categories below. Scroll for detailed sections with large image placeholders and alternating layouts.
+        </p>
+      </div>
+
+      <div class="bo-types-grid bo-types-grid--dense">
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Towing &amp; pushback</span></div>
+    <h3 class="bo-type-title">Tow Tractors &amp; Pushback</h3>
+    <p class="bo-type-text">Towbar and towbarless solutions selected to aircraft types and ramp geometry.</p>
+    <div class="bo-type-meta"><span>Heavy duty</span><span>Ramp safety</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#tow-tractors">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Baggage handling</span></div>
+    <h3 class="bo-type-title">Belt Loaders</h3>
+    <p class="bo-type-text">Height range aligned to aircraft mix for fast baggage/cargo flow.</p>
+    <div class="bo-type-meta"><span>Throughput</span><span>Stable</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#belt-loaders">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Baggage handling</span></div>
+    <h3 class="bo-type-title">Baggage Carts &amp; Dollies</h3>
+    <p class="bo-type-text">Tow trains, ULD dollies and carts for ramp logistics and terminal transfer.</p>
+    <div class="bo-type-meta"><span>Fleet standard</span><span>Maintainable</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#carts-dollies">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Cargo</span></div>
+    <h3 class="bo-type-title">Container / Pallet Loaders</h3>
+    <p class="bo-type-text">High loaders for ULD container/pallet handling and cargo operations.</p>
+    <div class="bo-type-meta"><span>ULD</span><span>High duty</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#cargo-loaders">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Passenger handling</span></div>
+    <h3 class="bo-type-title">Passenger Stairs</h3>
+    <p class="bo-type-text">Mobile boarding stairs with safety rails, stability and height adjustability.</p>
+    <div class="bo-type-meta"><span>Safe access</span><span>Remote ready</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#stairs">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Passenger handling</span></div>
+    <h3 class="bo-type-title">PRM / Ambulift</h3>
+    <p class="bo-type-text">Accessible passenger lifting solutions for inclusive terminal operations.</p>
+    <div class="bo-type-meta"><span>Accessibility</span><span>Comfort</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#ambulift">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Power</span></div>
+    <h3 class="bo-type-title">GPU (400Hz / 28VDC)</h3>
+    <p class="bo-type-text">Ground Power Units supporting aircraft electrical needs—mobile or fixed stands.</p>
+    <div class="bo-type-meta"><span>Gate support</span><span>Reliable</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#gpu-pca">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Air start</span></div>
+    <h3 class="bo-type-title">ASU (Air Start Unit)</h3>
+    <p class="bo-type-text">Pneumatic start support for aircraft requiring air start operations.</p>
+    <div class="bo-type-meta"><span>Pneumatic</span><span>Stand ready</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#asu">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Servicing</span></div>
+    <h3 class="bo-type-title">Potable Water</h3>
+    <p class="bo-type-text">Water service units with practical hose routing and tank sizing.</p>
+    <div class="bo-type-meta"><span>Hygiene</span><span>Maintainable</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#water-lav">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Servicing</span></div>
+    <h3 class="bo-type-title">Catering Trucks</h3>
+    <p class="bo-type-text">High-lift catering vehicles supporting turnaround servicing and logistics.</p>
+    <div class="bo-type-meta"><span>High lift</span><span>Stable</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#catering">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Specialised</span></div>
+    <h3 class="bo-type-title">De-icing / Anti-icing</h3>
+    <p class="bo-type-text">Specialised equipment depending on climate and airport requirements.</p>
+    <div class="bo-type-meta"><span>Cold climate</span><span>Safety</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#deicing">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Utility</span></div>
+    <h3 class="bo-type-title">Cleaning / Utility / Maintenance</h3>
+    <p class="bo-type-text">Maintenance stands, service platforms and airside utility equipment.</p>
+    <div class="bo-type-meta"><span>Uptime</span><span>Site-specific</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#utility">More info</a>
+    </div>
+  </article>
+
+  <article class="bo-type-card bo-reveal">
+    <div class="bo-type-tag"><span>Airside</span></div>
+    <h3 class="bo-type-title">Airport Apron Buses</h3>
+    <p class="bo-type-text">Ground transport and support vehicles for terminal-to-aircraft movement.</p>
+    <div class="bo-type-meta"><span>Passenger flow</span><span>Reliable</span></div>
+
+    <div class="bo-type-actions">
+      <a class="bo-type-btn" href="#transport">More info</a>
+    </div>
+  </article>
+
+</div>
+
+    </div>
+  </section>
+
+  <!-- ============ TYPICAL PACKAGES (NEW) ============ -->
+  <section class="bo-packages" id="packages">
+    <div class="bo-container">
+      <div class="bo-packages-head bo-reveal">
+        <p class="bo-eyebrow">Typical Packages</p>
+        <h2 class="bo-section-title">Suggested Fleet Bundles by Operation</h2>
+        <p class="bo-section-text">
+          These are common starting points. We tailor final selections to aircraft mix, stands/gates, turnaround targets, and available utilities.
+        </p>
+      </div>
+
+      <div class="bo-packages-grid">
+        <article class="bo-package-card bo-reveal">
+          <h3>Regional Airport Package</h3>
+          <p>Passenger handling + basic ramp support for small/medium aircraft operations.</p>
+          <ul>
+            <li>Passenger stairs</li>
+            <li>Belt loader</li>
+            <li>Baggage carts + tow tractor</li>
+            <li>Potable water + lavatory service (optional)</li>
+          </ul>
+        </article>
+
+        <article class="bo-package-card bo-reveal">
+          <h3>Narrow-Body Turnaround Package</h3>
+          <p>Balanced set for high-frequency passenger operations with fast baggage flow.</p>
+          <ul>
+            <li>Tow tractor / pushback</li>
+            <li>Belt loaders (x2)</li>
+            <li>Baggage carts + dollies</li>
+            <li>GPU / PCA depending on gate setup</li>
+          </ul>
+        </article>
+
+        <article class="bo-package-card bo-reveal">
+          <h3>Cargo Terminal Package</h3>
+          <p>ULD-oriented equipment selection for cargo throughput and loading logistics.</p>
+          <ul>
+            <li>Container/pallet loader</li>
+            <li>ULD dollies + tow tractors</li>
+            <li>Utility / maintenance platforms</li>
+            <li>Safety equipment set (cones/chocks/towbars)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ DETAILED CATEGORY SECTIONS (ALTERNATING) ============ -->
+
+  <!-- 1: Image RIGHT -->
+  <section class="bo-feature" id="tow-tractors">
+    <div class="bo-container">
+      <div class="bo-feature-grid bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">1. Tow Tractors &amp; Pushback</p>
+          <h2 class="bo-section-title">Safe Aircraft Movement &amp; Ramp Performance</h2>
+          <p class="bo-section-text">
+            Tow tractors and pushback solutions selected for drawbar pull, braking performance, turning radius and operational duty cycles.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Towbar and towbarless options based on aircraft mix</li>
+            <li>Stand geometry + ramp constraints considered during selection</li>
+            <li>Operator safety features and service access priority</li>
+            <li>Diesel / electric fleet planning where applicable</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/airport_towing.avif' %}" alt="GSE overview image">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2: Image LEFT -->
+  <section class="bo-feature bo-feature--alt" id="belt-loaders">
+    <div class="bo-container">
+      <div class="bo-feature-grid is-reverse bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">2. Conveyor Belt Loaders</p>
+          <h2 class="bo-section-title">Fast Baggage &amp; Cargo Loading</h2>
+          <p class="bo-section-text">
+            Conveyor belt loaders configured for aircraft door heights, turnaround targets, and safe apron movement.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Height range aligned to your aircraft types</li>
+            <li>Stable ramp movement + simple controls</li>
+            <li>Service-friendly layouts for uptime</li>
+            <li>Electric options for noise/emissions-restricted environments</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/self_propelled_conveyor.avif' %}" alt="GSE overview image">
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3: Image RIGHT -->
+  <section class="bo-feature" id="carts-dollies">
+    <div class="bo-container">
+      <div class="bo-feature-grid bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">3. Baggage Carts, Dollies &amp; Tow Trains</p>
+          <h2 class="bo-section-title">Efficient Ramp Logistics &amp; Terminal Flow</h2>
+          <p class="bo-section-text">
+            Baggage carts and dollies for reliable towing, sorting and transfer—selected for durability, turning radius and maintenance ease.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Standard baggage carts and cargo dollies</li>
+            <li>ULD dollies for container/pallet operations</li>
+            <li>Fleet standardisation for spares and training</li>
+            <li>Optimised for ramp safety and throughput</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/baggage_conveyor.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4: Image LEFT -->
+  <section class="bo-feature bo-feature--alt" id="cargo-loaders">
+    <div class="bo-container">
+      <div class="bo-feature-grid is-reverse bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">4. Container &amp; Pallet Loaders</p>
+          <h2 class="bo-section-title">High Loader Solutions for ULD Operations</h2>
+          <p class="bo-section-text">
+            Cargo loader equipment for container and pallet handling—supporting efficient, safe ULD movement at cargo terminals and aprons.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Loader capacity aligned to ULD sizes and duty cycles</li>
+            <li>Stable lifting and platform safety features</li>
+            <li>Configured for operational throughput and maintainability</li>
+            <li>Optional integration with towing and dolly systems</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/aviation_container.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5: Image RIGHT -->
+  <section class="bo-feature" id="stairs">
+    <div class="bo-container">
+      <div class="bo-feature-grid bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">5. Passenger Boarding Stairs</p>
+          <h2 class="bo-section-title">Sturdy, Safe Passenger Access</h2>
+          <p class="bo-section-text">
+            Mobile boarding stairs designed for safe passenger flow—well suited to remote locations and stand operations.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Anti-slip surfaces, handrails and stable platform design</li>
+            <li>Height adjustment suited to multiple aircraft types</li>
+            <li>Practical operator controls and service access</li>
+            <li>Configured for safe apron movement requirements</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/passenger_boarding.avif' %}" alt="GSE overview image" style="border:1px solid grey;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6: Image LEFT -->
+  <section class="bo-feature bo-feature--alt" id="ambulift">
+    <div class="bo-container">
+      <div class="bo-feature-grid is-reverse bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">6. PRM / Ambulift</p>
+          <h2 class="bo-section-title">Accessible Passenger Support</h2>
+          <p class="bo-section-text">
+            Passenger lifting equipment supporting inclusive operations with safe, comfortable transfer to aircraft.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Height and platform alignment for multiple aircraft</li>
+            <li>Safety rails and secure passenger handling</li>
+            <li>Site-specific configuration based on stand layout</li>
+            <li>Maintainable design for dependable service</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/boiler.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7: Image RIGHT -->
+  <section class="bo-feature" id="gpu-pca">
+    <div class="bo-container">
+      <div class="bo-feature-grid bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">7. GPU &amp; PCA</p>
+          <h2 class="bo-section-title">Ground Power &amp; Cabin Comfort</h2>
+          <p class="bo-section-text">
+            Solutions to reduce APU usage and support gate operations with reliable aircraft ground power and cabin air delivery.
+          </p>
+          <ul class="bo-feature-list">
+            <li>GPU options: 400Hz AC / 28V DC (site dependent)</li>
+            <li>PCA options aligned to climate and gate operations</li>
+            <li>Mobile or fixed stand solutions</li>
+            <li>Practical service access and operational safety</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/towable_airport.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8: Image LEFT -->
+  <section class="bo-feature bo-feature--alt" id="asu">
+    <div class="bo-container">
+      <div class="bo-feature-grid is-reverse bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">8. ASU (Air Start Unit)</p>
+          <h2 class="bo-section-title">Pneumatic Start Support</h2>
+          <p class="bo-section-text">
+            Air start units supporting aircraft requiring pneumatic start capabilities—selected for operational readiness and reliability.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Mobile deployment suited to ramp workflows</li>
+            <li>Controls and safety features for operator handling</li>
+            <li>Maintainable configuration for high uptime</li>
+            <li>Aligned to your aircraft and operational needs</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/boiler.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9: Image RIGHT -->
+  <section class="bo-feature" id="water-lav">
+    <div class="bo-container">
+      <div class="bo-feature-grid bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">9. Potable Water &amp; Lavatory Service</p>
+          <h2 class="bo-section-title">Hygienic, Practical Aircraft Servicing</h2>
+          <p class="bo-section-text">
+            Water and lavatory service units configured with safe handling, tank sizing and practical hose routing to suit operations.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Potable water supply and wash-down support (where required)</li>
+            <li>Lavatory servicing for reliable turnaround operations</li>
+            <li>Safe routing, valves and maintainable layout</li>
+            <li>Optimised for constrained apron movement</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/aircraft_lavatory.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10: Image LEFT -->
+  <section class="bo-feature bo-feature--alt" id="catering">
+    <div class="bo-container">
+      <div class="bo-feature-grid is-reverse bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">10. Catering Trucks</p>
+          <h2 class="bo-section-title">High-Lift Servicing &amp; Turnaround Logistics</h2>
+          <p class="bo-section-text">
+            Catering lift vehicles configured for stability, safe platform movement and maintainability—supporting efficient servicing.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Lift height alignment to aircraft types</li>
+            <li>Stable platform and safe operation features</li>
+            <li>Layout designed for serviceability and uptime</li>
+            <li>Optional customisation for operational needs</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/catering_trucks.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11: Image RIGHT -->
+  <section class="bo-feature" id="deicing">
+    <div class="bo-container">
+      <div class="bo-feature-grid bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">11. De-icing / Anti-icing</p>
+          <h2 class="bo-section-title">Specialised Safety Equipment for Cold Conditions</h2>
+          <p class="bo-section-text">
+            De-icing and anti-icing solutions configured for airport climate conditions and operational requirements.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Selection based on climate and aircraft operations</li>
+            <li>Safe movement, spray controls and stable lift arrangements</li>
+            <li>Maintainability and uptime considerations</li>
+            <li>Site-specific configuration for ramps/stands</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/boiler.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 12: Image LEFT -->
+  <section class="bo-feature bo-feature--alt" id="utility">
+    <div class="bo-container">
+      <div class="bo-feature-grid is-reverse bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">12. Cleaning / Utility / Maintenance Platforms</p>
+          <h2 class="bo-section-title">Airside Support for Uptime &amp; Servicing</h2>
+          <p class="bo-section-text">
+            Utility equipment supporting safe servicing, aircraft cleaning and maintenance access—configured to site workflows.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Maintenance stands and access platforms</li>
+            <li>Cleaning and utility support vehicles (site dependent)</li>
+            <li>Designed for safe operator access and stability</li>
+            <li>Maintainability-focused for long-term reliability</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/aircraft_clean.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13: Image RIGHT -->
+  <section class="bo-feature" id="transport">
+    <div class="bo-container">
+      <div class="bo-feature-grid bo-reveal">
+        <div class="bo-feature-text">
+          <p class="bo-eyebrow">13. Airside Buses / Crew Transport</p>
+          <h2 class="bo-section-title">Airport Apron Buses</h2>
+          <p class="bo-section-text">
+            Airside transport vehicles supporting terminal-to-aircraft operations and stand logistics.
+          </p>
+          <ul class="bo-feature-list">
+            <li>Passenger transfer buses (airside operations)</li>
+            <li>Crew transport solutions</li>
+            <li>Configured for safety and operational reliability</li>
+            <li>Fleet planning aligned to passenger flow</li>
+          </ul>
+        </div>
+
+        <div class="bo-feature-media">
+            <img src="{% static 'images/gse/airport_apron.avif' %}" alt="GSE overview image">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORKFLOW ============ -->
+  <section class="bo-process" id="workflow">
     <div class="bo-container">
       <div class="bo-process-inner">
 
         <div class="bo-process-intro bo-reveal">
           <p class="bo-eyebrow">How we work</p>
-          <h2 class="bo-section-title">Boiler Project Workflow</h2>
+          <h2 class="bo-section-title">GSE Project Workflow</h2>
           <p class="bo-process-text">
-            We follow a structured approach—from load assessment and type selection through to supply coordination
-            and commissioning support—so your boiler installation is safe, efficient and compliant.
-          </p>
-          <p class="bo-process-text">
-            Our team can work with your consultants, mechanical contractors and facility team to integrate boilers
-            into existing plant rooms, new builds or retrofit projects.
+            We follow a structured approach—from requirements and stand assessment through to supply coordination and rollout support—
+            so your GSE package is practical, safe and deployment-ready.
           </p>
         </div>
 
@@ -296,41 +684,29 @@
             <li class="bo-timeline-item">
               <div class="bo-timeline-icon">1</div>
               <div class="bo-timeline-content">
-                <h3 class="bo-timeline-title">Thermal Load &amp; Site Assessment</h3>
-                <p class="bo-timeline-text">
-                  Review of process or building heating demand, operating pressure and temperature, duty cycles,
-                  available utilities, fuel options and installation constraints.
-                </p>
+                <h3 class="bo-timeline-title">Operational Requirements</h3>
+                <p class="bo-timeline-text">Aircraft mix, stand layout, ramp constraints, duty cycles, throughput and safety considerations.</p>
               </div>
             </li>
             <li class="bo-timeline-item">
               <div class="bo-timeline-icon">2</div>
               <div class="bo-timeline-content">
-                <h3 class="bo-timeline-title">Boiler Type &amp; Configuration Selection</h3>
-                <p class="bo-timeline-text">
-                  Selection of water-tube, fire-tube or electric boiler; flow path, circulation method, pressure class
-                  and orientation to match performance and regulatory needs.
-                </p>
+                <h3 class="bo-timeline-title">Selection &amp; Package Planning</h3>
+                <p class="bo-timeline-text">Category mix, fleet standardisation, redundancy planning and electric/hybrid feasibility.</p>
               </div>
             </li>
             <li class="bo-timeline-item">
               <div class="bo-timeline-icon">3</div>
               <div class="bo-timeline-content">
-                <h3 class="bo-timeline-title">Engineering &amp; Supply Coordination</h3>
-                <p class="bo-timeline-text">
-                  Coordination with manufacturers for boiler packages, burners, pumps, feedwater systems, valves
-                  and controls—including documentation, QA and logistics.
-                </p>
+                <h3 class="bo-timeline-title">Supply Coordination</h3>
+                <p class="bo-timeline-text">Configuration finalisation, documentation, QA alignment and delivery planning.</p>
               </div>
             </li>
             <li class="bo-timeline-item">
               <div class="bo-timeline-icon">4</div>
               <div class="bo-timeline-content">
-                <h3 class="bo-timeline-title">Commissioning Support &amp; Ongoing Optimisation</h3>
-                <p class="bo-timeline-text">
-                  Support for commissioning, performance checks and safety interlocks, followed by ongoing guidance
-                  on efficiency improvements and lifecycle upgrades.
-                </p>
+                <h3 class="bo-timeline-title">Rollout &amp; Support</h3>
+                <p class="bo-timeline-text">Deployment support, training coordination, commissioning checks and spares planning.</p>
               </div>
             </li>
           </ol>
@@ -340,59 +716,39 @@
     </div>
   </section>
 
-  <!-- ============ INDUSTRIES / APPLICATIONS ============ -->
+  <!-- ============ APPLICATIONS ============ -->
   <section class="bo-industries" id="applications">
     <div class="bo-container">
       <div class="bo-industries-header bo-reveal">
-        <p class="bo-eyebrow">Where boilers are used</p>
-        <h2 class="bo-section-title">Typical Boiler Applications</h2>
-        <p>
-          iEngineering supports boiler and steam/hot-water solutions across a wide range of industries,
-          from food production and chemicals to healthcare and power.
-        </p>
+        <p class="bo-eyebrow">Typical Applications</p>
+        <h2 class="bo-section-title">Where GSE Is Used</h2>
+        <p>GSE supports aircraft servicing and turnaround operations across passenger, cargo and maintenance environments.</p>
       </div>
 
       <div class="bo-industries-grid">
         <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Food &amp; Beverage Processing</h3>
-          <p class="bo-industry-text">
-            Process steam for cooking, sterilisation, CIP systems and packaging lines.
-          </p>
+          <h3 class="bo-industry-title">Airports &amp; Airport Authorities</h3>
+          <p class="bo-industry-text">Fleet planning and equipment packages for apron stands, gates and terminal operations.</p>
         </article>
-
         <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Chemical &amp; Pharmaceutical</h3>
-          <p class="bo-industry-text">
-            Controlled steam and hot water for reactors, distillation and critical processes.
-          </p>
+          <h3 class="bo-industry-title">Airlines &amp; Ground Handlers</h3>
+          <p class="bo-industry-text">Turnaround-focused equipment to support on-time performance and ramp safety.</p>
         </article>
-
         <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Refineries &amp; Distilleries</h3>
-          <p class="bo-industry-text">
-            Boiler systems for distillation, stripping, heating and associated balance-of-plant.
-          </p>
+          <h3 class="bo-industry-title">Cargo Terminals</h3>
+          <p class="bo-industry-text">Equipment aligned to loading workflows, dollies/carts and ramp logistics.</p>
         </article>
-
         <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Sugar &amp; Paper Mills</h3>
-          <p class="bo-industry-text">
-            Steam for process, cogeneration, drying sections and mill-wide heating loads.
-          </p>
+          <h3 class="bo-industry-title">MRO &amp; Maintenance Bases</h3>
+          <p class="bo-industry-text">Support equipment for servicing bays, checks and aircraft ground power needs.</p>
         </article>
-
         <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Textiles &amp; Laundries</h3>
-          <p class="bo-industry-text">
-            Steam and hot water for washing, dyeing, pressing and finishing operations.
-          </p>
+          <h3 class="bo-industry-title">Remote / Island Operations</h3>
+          <p class="bo-industry-text">Practical solutions for constrained logistics and high-reliability requirements.</p>
         </article>
-
         <article class="bo-industry-card bo-reveal">
-          <h3 class="bo-industry-title">Healthcare &amp; FMCG</h3>
-          <p class="bo-industry-text">
-            Boiler solutions for hospitals, sterilisation, HVAC systems and FMCG process lines.
-          </p>
+          <h3 class="bo-industry-title">Defence &amp; Government</h3>
+          <p class="bo-industry-text">Site-specific packages and maintainability-focused selections.</p>
         </article>
       </div>
     </div>
@@ -402,88 +758,66 @@
   <section id="about-us" class="cmms-contact-form-wrap">
     <div class="cmms-contact-form-inner">
       <p class="eyebrow-neplan-what-we-bring">About us</p>
-      <h2 class="title-meet-ieng-about">
-        About us – where vision meets execution!
-      </h2>
+      <h2 class="title-meet-ieng-about">About us – where vision meets execution!</h2>
       <p class="about-text-abou-ieng">
-        iEngineering is your trusted partner for advanced electrical and energy solutions across Australia, Fiji, and
-        India. We deliver high-quality hardware products—from switchboards and transformers to solar, BESS, EV charging
-        systems and industrial boilers—backed by expert engineering, reliable installation and dedicated local support.
+        iEngineering is your trusted partner for advanced electrical and energy solutions across Australia, Fiji, and India.
+        We deliver high-quality hardware products—from switchboards and transformers to solar, BESS, EV charging systems and
+        aviation ground support equipment—backed by expert engineering, reliable installation and dedicated local support.
       </p>
     </div>
   </section>
 
-
-
   <!-- ============ MISSION / VISION / VALUES ============ -->
-<section class="bo-mvv-section" id="mission">
-  <div class="bo-container">
+  <section class="bo-mvv-section" id="mission">
+    <div class="bo-container">
+      <div class="bo-mvv-tabs">
+        <button class="bo-mvv-tab is-active" data-tab="mission">Mission</button>
+        <button class="bo-mvv-tab" data-tab="vision">Vision</button>
+        <button class="bo-mvv-tab" data-tab="values">Values</button>
+      </div>
 
-    <!-- Tabs -->
-    <div class="bo-mvv-tabs">
-      <button class="bo-mvv-tab is-active" data-tab="mission">Mission</button>
-      <button class="bo-mvv-tab" data-tab="vision">Vision</button>
-      <button class="bo-mvv-tab" data-tab="values">Values</button>
+      <div class="bo-mvv-content-wrap">
+        <div class="bo-mvv-content is-active" data-tab="mission">
+          <div class="bo-mvv-text">
+            <h2>Our Mission</h2>
+            <p>
+              To enhance efficiency, ensure quality control, and deliver customer satisfaction through innovative engineering
+              solutions aligned to global standards and sustainable outcomes.
+            </p>
+          </div>
+          <div class="bo-mvv-image">
+            <img src="{% static 'images/mission.avif' %}" alt="Mission Image">
+          </div>
+        </div>
+
+        <div class="bo-mvv-content" data-tab="vision">
+          <div class="bo-mvv-text">
+            <h2>Our Vision</h2>
+            <p>
+              To be a trusted engineering partner across Australia, Fiji, India and the Pacific—delivering intelligent,
+              resilient and low-carbon infrastructure.
+            </p>
+          </div>
+          <div class="bo-mvv-image">
+            <img src="{% static 'images/vision.avif' %}" alt="Mission Image">
+          </div>
+        </div>
+
+        <div class="bo-mvv-content" data-tab="values">
+          <div class="bo-mvv-text">
+            <h2>Our Values</h2>
+            <p>
+              We operate with integrity, safety and accountability—focused on practical innovation, clear communication
+              and long-term partnerships.
+            </p>
+          </div>
+          <div class="bo-mvv-image">
+            <img src="{% static 'images/values.avif' %}" alt="Mission Image">
+          </div>
+        </div>
+      </div>
     </div>
-
-    <!-- Content wrapper -->
-    <div class="bo-mvv-content-wrap">
-
-      <!-- Mission -->
-      <div class="bo-mvv-content is-active" data-tab="mission">
-        <div class="bo-mvv-text">
-          <h2>Our Mission</h2>
-          <p>
-            At iEngineering Australia, our mission is to enhance efficiency, ensure quality
-            control, and deliver customer satisfaction through innovative engineering
-            solutions. We are committed to global standards and sustainable solutions that
-            create long-term value for our clients and communities.
-          </p>
-        </div>
-        <div class="bo-mvv-image">
-          <!-- UPDATE with your mission image -->
-          <img src="./static/images/contact.jpg' %}"
-               alt="Strategic mission graphic" />
-        </div>
-      </div>
-
-      <!-- Vision -->
-      <div class="bo-mvv-content" data-tab="vision">
-        <div class="bo-mvv-text">
-          <h2>Our Vision</h2>
-          <p>
-            To be a trusted engineering partner across Australia, Fiji, India and the
-            Pacific—delivering intelligent, resilient and low-carbon infrastructure for
-            utilities, industry and the built environment.
-          </p>
-        </div>
-        <div class="bo-mvv-image">
-          <!-- UPDATE with your vision image (or reuse same) -->
-          <img src="{% static './static/images/contact.jpg' %}"
-               alt="Strategic vision graphic" />
-        </div>
-      </div>
-
-      <!-- Values -->
-      <div class="bo-mvv-content" data-tab="values">
-        <div class="bo-mvv-text">
-          <h2>Our Values</h2>
-          <p>
-            We operate with integrity, safety and accountability. Our team focuses on
-            practical innovation, clear communication and long-term partnerships so that
-            every project delivers real operational and commercial benefits.
-          </p>
-        </div>
-        <div class="bo-mvv-image">
-          <!-- UPDATE with your values image (or reuse same) -->
-          <img src="{% static 'images/values-diagram.png' %}"
-               alt="Core values graphic" />
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
+  </section>
 
   <!-- CONTACT -->
   <section id="contact">
@@ -492,14 +826,11 @@
 
   {% include 'footer.html' %}
 
-  <!-- JS includes -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
   <script defer src="{% static 'js/demo_form.js' %}"></script>
   <script defer src="{% static 'js/main.js' %}"></script>
   <script defer src="{% static 'js/neplan.js' %}"></script>
 
-  <!-- Simple reveal script for .bo-reveal -->
+  <!-- Reveal -->
   <script>
     (function () {
       const els = document.querySelectorAll(".bo-reveal");
@@ -520,32 +851,23 @@
       );
       els.forEach((el) => io.observe(el));
     })();
-
-
   </script>
+
+  <!-- MVV Tabs -->
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const tabs = document.querySelectorAll(".bo-mvv-tab");
-    const panels = document.querySelectorAll(".bo-mvv-content");
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll(".bo-mvv-tab");
+      const panels = document.querySelectorAll(".bo-mvv-content");
+      if (!tabs.length) return;
 
-    if (!tabs.length) return;
-
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => {
-        const target = tab.dataset.tab;
-
-        // update tabs
-        tabs.forEach((t) => t.classList.toggle("is-active", t === tab));
-
-        // update content
-        panels.forEach((panel) => {
-          const match = panel.dataset.tab === target;
-          panel.classList.toggle("is-active", match);
+      tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+          const target = tab.dataset.tab;
+          tabs.forEach((t) => t.classList.toggle("is-active", t === tab));
+          panels.forEach((panel) => panel.classList.toggle("is-active", panel.dataset.tab === target));
         });
       });
     });
-  });
-</script>
-
+  </script>
 </body>
 </html>
