@@ -21,12 +21,21 @@ BASE_DIR = Path(__file__).resolve().parent.parent
  
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-tpzqxw&&@03wq2yzgf!gzh6u2=044s2j+_!#jioe(#f^6%quzo'
- 
+
+DEBUG = False
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if DEBUG:
+    SECURE_SSL_REDIRECT = False
+    CSRF_COOKIE_SECURE = False
+    SESSION_COOKIE_SECURE = False
+else:
+    SECURE_SSL_REDIRECT = True
+    CSRF_COOKIE_SECURE = True
+    SESSION_COOKIE_SECURE = True
  
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["packagingplant.ieng.tech", ".ieng.tech"]
  
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
  
 # Application definition
  
@@ -146,10 +155,7 @@ CONTACT_RECIPIENTS = [
 ]
 CONTACT_RECIPIENTS = ["shila@iengaust.com.au","enquiries@iengaust.com.au"]
 DEMO_RECIPIENTS = CONTACT_RECIPIENTS
- 
-# CONTACT_EMAIL = 'diksha@iengaust.com.au'
- 
- 
+
 # Who receives the notifications
 CONTACT_INBOX = CONTACT_RECIPIENTS[0]
 EMAIL_TIMEOUT = 15

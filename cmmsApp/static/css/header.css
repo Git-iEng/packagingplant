@@ -718,8 +718,8 @@ This section is important for the desktop view, as it overrides the mobile style
 /* ===== HERO IMAGE: fix mobile cropping + make desktop a bit larger ===== */
 
 /* Make the hero media/card slightly bigger on web */
-.bo-hero-media { width: 100%; }
-.bo-hero-card  { width: 100%; max-width: 720px; margin-left: auto; }
+.bo-hero-media { width: 90%; }
+.bo-hero-card  { width: 50%; max-width: 520px; margin-left: auto; }
 
 /* Control the image box */
 .bo-hero-image-wrap{
@@ -733,7 +733,7 @@ This section is important for the desktop view, as it overrides the mobile style
 /* Default (desktop/web): fill nicely */
 .bo-hero-image-wrap img{
   display: block;
-  width: 100%;
+  width: 90%;
   height: 100%;
   object-fit: cover;               /* nice look on desktop */
   object-position: center;
@@ -765,7 +765,7 @@ This section is important for the desktop view, as it overrides the mobile style
 /* Show full image (no crop) */
 .bo-hero-image-wrap img{
   display: block;
-  width: 100%;
+  width: 90%;
   height: auto;          /* IMPORTANT */
   object-fit: contain;   /* safety if any height is applied elsewhere */
   object-position: center;
@@ -820,7 +820,7 @@ This section is important for the desktop view, as it overrides the mobile style
 
 /* 2) HERO IMAGE: prevent weird cropping on mobile, make a bit bigger on web */
 .bo-hero-card{
-  width: 100%;
+  width: 87%;
 }
 
 .bo-hero-image-wrap{
@@ -839,7 +839,7 @@ This section is important for the desktop view, as it overrides the mobile style
 }
 
 .bo-hero-image-wrap img{
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: block;
   object-fit: cover;                 /* web view looks clean */
@@ -890,4 +890,40 @@ This section is important for the desktop view, as it overrides the mobile style
     width: 100%;
     aspect-ratio: 16 / 9;
   }
+}
+
+
+/* ================================
+   HERO RIGHT CARD (NO GAP + NO CROP)
+   ================================ */
+
+.bo-hero-card{
+  padding: 0;                 /* remove gap around image */
+  overflow: hidden;
+  border-radius: 24px;
+  background: #fff;
+  box-shadow: 0 24px 70px rgba(15,27,42,.14);
+}
+
+.bo-hero-image-wrap{
+  padding: 0;
+  margin: 0;
+  border-radius: 24px 24px 0 0;
+  overflow: hidden;
+  background: #fff;
+}
+
+/* Full image visible (no crop) */
+.bo-hero-image-wrap img{
+  width: 100%;
+  height: 360px;              /* adjust if needed */
+  display: block;
+  object-fit: contain;        /* IMPORTANT: no crop */
+  object-position: center;
+
+  background: #fff;
+}
+
+.bo-hero-meta{
+  padding: 18px 20px 22px;
 }
