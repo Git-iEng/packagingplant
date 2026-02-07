@@ -20,7 +20,6 @@ from openpyxl import Workbook, load_workbook
 from openpyxl.utils import get_column_letter
 
 from .forms import ContactForm
-from .utils_excel import append_submission_xlsx
 from .utils_contact import normalize_phone_and_country, country_name_from_alpha2
 from django.http import JsonResponse
 import pycountry, phonenumbers
@@ -29,32 +28,6 @@ from django.contrib.staticfiles.storage import staticfiles_storage
 # ---------- Validation patterns ----------
 NAME_RE  = re.compile(r"^[A-Za-z\s'.-]{2,}$")
 PHONE_RE = re.compile(r"^\+?\d[\d\s\-()]{6,}$")
-
-# ---------- Excel paths ----------
-EXCEL_DIR  = os.path.join(settings.BASE_DIR, "data")
-EXCEL_PATH = os.path.join(EXCEL_DIR, "carl_demo_requests.xlsx")
-
-
-# def _append_to_excel(row):
-#     """Create/append to the Request Demo workbook."""
-#     os.makedirs(EXCEL_DIR, exist_ok=True)
-#     if os.path.exists(EXCEL_PATH):
-#         wb = load_workbook(EXCEL_PATH)
-#         ws = wb.active
-#     else:
-#         wb = Workbook()
-#         ws = wb.active
-#         ws.title = "Requests"
-#         headers = [
-#             "Timestamp", "Full Name", "Company", "Email",
-#             "Country", "Dial Code", "Phone", "Address",
-#             "Message", "Source IP",
-#         ]
-#         ws.append(headers)
-#         for i in range(1, len(headers) + 1):
-#             ws.column_dimensions[get_column_letter(i)].width = 24
-#     ws.append(row)
-#     wb.save(EXCEL_PATH)
 
 
 # ---------- Email helpers ----------
